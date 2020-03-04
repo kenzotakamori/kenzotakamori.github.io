@@ -1,0 +1,6 @@
+.hide_for_mobile {
+    display: none;
+    @media (min-width: 48rem) {
+        display: block;
+    }
+}
