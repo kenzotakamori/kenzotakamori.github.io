@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="myAccount.js"></script>
+    <script type="text/javascript" src="modal-add-scholarship.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="hide.css">
     </head>
-    <body>
+    <body ng-app="main">
         <!-- Header -->
         <header>
             <div class="header">
@@ -28,25 +33,27 @@
         </header>
         <!-- Body -->
         <main>
-            <div>
-                <i class="fa fa-angle-left"></i>
-                Minha conta
-            </div>
-            <h1>Bolsas favoritas</h1>
-            <div>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</div>
-            <table>
-                <tr><td>Todos os semestres</td></tr>
-                <tr><td>2º semestre de 2019</td></tr>
-                <tr><td>1º semestre de 2020</td></tr>
-            </table>
-            <div>
-                <i class="fa fa-plus-circle"></i>
-                <span>Adicionar bolsa</span>
-                Clique para adicionar bolsas de cursos do seu interesse
-            </div>
-            <!-- Colocar ng-repeat para cartões aqui -->
-            <div>
+            <div ng-controller="myAccount">
+                <div>
+                    <i class="fa fa-angle-left"></i>
+                    Minha conta {{x}}
+                </div>
+                <h1>Bolsas favoritas</h1>
+                <div>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</div>
+                <table>
+                    <tr><td>Todos os semestres</td></tr>
+                    <tr><td>2º semestre de 2019</td></tr>
+                    <tr><td>1º semestre de 2020</td></tr>
+                </table>
+                <div ng-click="openModal()">
+                    <i class="fa fa-plus-circle"></i>
+                    <span>Adicionar bolsa</span>
+                    Clique para adicionar bolsas de cursos do seu interesse
+                </div>
+                <!-- Colocar ng-repeat para cartões aqui -->
+                <div>
 
+                </div>
             </div>
         </main>
         <!-- Footer -->
