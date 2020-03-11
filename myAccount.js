@@ -7,7 +7,9 @@ app.controller('myAccount', function($scope, $http, $modal) {
             controller: 'ModalAddScholarship',
             size: 'lg',
             resolve: {
-                items: $scope.scholarships
+                items: function(){
+                    return $scope.scholarships;
+                }
             }
         })
         modalInstance.result.then(function(){
