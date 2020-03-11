@@ -1,4 +1,4 @@
-app.controller('ModalAddScholarship', function($scope, items){
+app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.items = items;
     
     // Change selection on click
@@ -8,11 +8,11 @@ app.controller('ModalAddScholarship', function($scope, items){
 
     // Button to save selected scholarships
     $scope.ok = function() {
-        modalInstance.dismiss('ok');
+        $modalInstance.close($scope.items);
     }
 
     // Button to close modal
     $scope.cancel = function() {
-        modalInstance.dismiss('cancel');
+        $modalInstance.dismiss('cancel');
     }
 })

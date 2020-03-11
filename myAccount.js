@@ -12,7 +12,8 @@ app.controller('myAccount', function($scope, $http, $modal) {
                 }
             }
         })
-        modalInstance.result.then(function(){
+        modalInstance.result.then(function(response){
+            $scope.scholarships = response
             localStorage.setItem('selectedScholarships', JSON.stringify(response));
         }, function(){
 
