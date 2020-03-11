@@ -57,3 +57,7 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
+[ng-click] {
+    cursor: pointer;
+}
