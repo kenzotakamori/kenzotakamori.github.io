@@ -1,7 +1,7 @@
-app.controller('myAccount', function($scope, $http, $modal) {
+app.controller('myAccount', function($scope, $http, $uibModal) {
     $scope.scholarships = [];
     $scope.openModal = function() {
-        var modalInstance = $modal.open({
+        var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'modal-add-scholarship.html',
             controller: 'ModalAddScholarship',
