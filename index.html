@@ -7,10 +7,10 @@
     <script type="text/javascript" src="modal-add-scholarship.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="hide.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body ng-app="main">
         <!-- Header -->
@@ -59,26 +59,38 @@
         </main>
         <!-- Footer -->
         <footer>
-            <div class="whatsapp">
-                <i class="fa fa-whatsapp"></i>
-                0800 123 222
-                Segunda a sexta de 8h às 22h
+            <div class="footer-row">
+                <div class="whatsapp">
+                    <div>
+                        <i class="fa fa-whatsapp"></i>
+                    </div>
+                    <p>
+                        <span>
+                            0800 123 222<br>
+                        </span>
+                        Segunda a sexta de 8h às 22h
+                    </p>
+                </div>
             </div>
-            <div class="chat">
-                <i class="fa fa-comments"></i>
-                Chat
+            <div class="footer-row">
+                <div class="chat">
+                    <i class="fa fa-comments"></i>
+                    Chat
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    E-mail
+                </div>
+                <div class="help">
+                    <i class="fa fa-info"></i>
+                    Ajuda
+                </div>
             </div>
-            <div class="email">
-                <i class="fa fa-envelope"></i>
-                E-mail
-            </div>
-            <div class="help">
-                <i class="fa fa-info"></i>
-                Ajuda
-            </div>
-            <div>
-                Feito com <i class="fa fa-heart"></i> pela Quero Educação
-            </div>
+            <div class="footer-row">
+                <div class="footer-message">
+                    <p>Feito com <i class="fa fa-heart"></i> pela Quero Educação</p>
+                </div>
+            </div>            
         </footer>
     </body>
 </html>
