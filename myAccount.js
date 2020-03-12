@@ -3,6 +3,7 @@ app.controller('myAccount', function($scope, $http, $modal) {
     $scope.openModal = function() {
         var modalInstance = $modal.open({
             animation: true,
+            scope: $scope,
             templateUrl: 'modal-add-scholarship.html',
             controller: 'ModalAddScholarship',
             size: 'lg',
