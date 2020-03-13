@@ -4,7 +4,10 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.filters = {
         city: null,
         course: null,
-        mode: null,
+        mode: {
+            presential: true,
+            distance: true
+        },
         cost: null,
     }
     $scope.cityOptions = [];
@@ -33,8 +36,8 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
                 if ($scope.filter.course !== item.course.name)
                     return false;
 
-        if ($scope.filter.mode)
-            if ($scope.filter.mode !== item.course.kind)
+        if ((!$scope.filter.mode.presential && item.course.kind === 'Presencial')
+            || (!$scope.filter.mode.distance && item.course.kind === 'EaD'))
                 return false;
         
         if ($scope.filter.cost)
@@ -44,11 +47,15 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
         return true;
     }
 
+    // change mode on click
+    $scope.changeModeFilter = function(key) {
+        $scope.filters[key] = !$scope.filters[key];
+    }
+
     // Function called on any change on filters
-    $scope.filterResults = function(f) {
+    $scope.filterResults = function() {
         $scope.itemsShown = $scope.items.filter(validateItem);
     }
-    $scope.$watch('filters', filterResults);
 
     // Change selection on click
     $scope.changeSelection = function(item) {
@@ -74,4 +81,5 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     }
 
     getOptions();
+    $scope.$watch('filters', $scope.filterResults);
 })
