@@ -79,7 +79,7 @@ footer .footer-row {
     padding-left: 45px;
 }
 
-i.fa.fa-whatsapp {
+i.fab.fa-whatsapp {
     line-height: 70px;
 }
 
@@ -122,7 +122,7 @@ i.fa.fa-whatsapp {
     width: 100%;
 }
 
-footer .fa {
+footer .fa, footer .fab, footer .far {
     font-size: 25px;
 }
 

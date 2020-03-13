@@ -3,13 +3,61 @@
 
     </div>
     <div class="modal-body">
-        <h1>A Custom Modal!</h1>
-        <p>
-            Testando essa parada.
-        </p>
+        <h1>Adionar bolsa</h1>
+        <p>Filtre e adicione as bolsas de seu interesse.</p>
+        <div class="filter-city">
+            <p>SELECIONE SUA CIDADE</p>
+            <select>
+    
+            </select>
+        </div>
+        <div class="filter-course">
+            <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
+            <select>
+    
+            </select>
+        </div>
+        <div class="filter-mode">
+            <p>COMO VOCÊ QUER ESTUDAR?</p>
+            <div>
+            <span ng-if="" ng-click=""><i class="far fa-square"></i></span>
+            <span ng-if="" ng-click=""><i class="far fa-check-square"></i></span>
+            <span>Presencial</span>
+            <span ng-if="" ng-click=""><i class="far fa-square"></i></span>
+            <span ng-if="" ng-click=""><i class="far fa-check-square"></i></span>
+            <span>À distância</span>
+        </div>
+        <div class="filter-cost">
+            <p>ATÉ QUANTO PODE PAGAR?</p>
+            <span>Valor</span>
+            <div class="bar"></div>
+        </div>
+        <div>
+            <p>Resultado:</p>
+            <div>
+                <span>Ordenar por</span>
+                <div ng-click="changeSort">
+                    {{}}
+                </div>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </div>
+        <div ng-repeat="item in items" ng-click="changeSelection">
+            <span ng-if="!selected"><i class="far fa-square"></i></span>
+            <span ng-if="selected"><i class="far fa-check-square"></i></span>
+            <img src="">
+            <div class="scholarship-info">
+                <p>{{item.course.name}}</p>
+                {{item.course.level}}
+                Bolsa de {{item.discount_percentage}}<br>
+                R$ {{item.price_with_discount}}/mês
+            </div>
+        </div>
     </div>
     <div class="modal-footer">
-        <button ng-click="">Close</button>
+        <button ng-click="">Cancelar</button>
+        <button class="add-disabled" ng-if="!checkSelection()" ng-click="">Adicionar bolsa(s)</button>
+        <button class="add-enabled" ng-if="checkSelection()" ng-click="">Adicionar bolsa(s)</button>
     </div>
     </div>
     <div class="modal-background"></div>
