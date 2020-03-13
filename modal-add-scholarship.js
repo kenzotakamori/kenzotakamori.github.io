@@ -81,5 +81,5 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     }
 
     getOptions();
-    // $scope.$watch('filters', $scope.filterResults);
+    $scope.$watch('filters', $scope.filterResults, true);
 })

@@ -7,20 +7,20 @@
         <p>Filtre e adicione as bolsas de seu interesse.</p>
         <div class="filter-city">
             <p>SELECIONE SUA CIDADE</p>
-            <select ng-model="filters.city" ng-options="city as city for city in cityOptions" ng-change="filterResults()"></select>
+            <select ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
         </div>
         <div class="filter-course">
             <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
-            <select ng-model="filters.course" ng-options="course as course for course in courseOptions" ng-change="filterResults()"></select>
+            <select ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
         </div>
         <div class="filter-mode">
             <p>COMO VOCÊ QUER ESTUDAR?</p>
             <div>
-            <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')" ng-change="filterResults()"><i class="far fa-square"></i></span>
-            <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')" ng-change="filterResults()"><i class="far fa-check-square"></i></span>
+            <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
+            <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
             <span>Presencial</span>
-            <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')" ng-change="filterResults()"><i class="far fa-square"></i></span>
-            <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')" ng-change="filterResults()"><i class="far fa-check-square"></i></span>
+            <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-square"></i></span>
+            <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-check-square"></i></span>
             <span>À distância</span>
         </div>
         <div class="filter-cost">
