@@ -7,11 +7,11 @@
         <p>Filtre e adicione as bolsas de seu interesse.</p>
         <div class="filter-city">
             <p>SELECIONE SUA CIDADE</p>
-            <select ng-model="filters.city" ng-options="city for city in city in cityOptions"></select>
+            <select ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
         </div>
         <div class="filter-course">
             <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
-            <select ng-model="filters.course" ng-options="course for course in course in courseOptions"></select>
+            <select ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
         </div>
         <div class="filter-mode">
             <p>COMO VOCÊ QUER ESTUDAR?</p>

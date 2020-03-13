@@ -29,19 +29,19 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
 
     function validateItem(item) {
         if ($scope.filters.city)
-            if ($scope.filter.city !== item.campus.city)
+            if ($scope.filters.city !== item.campus.city)
                 return false;
 
         if ($scope.filters.course)
-                if ($scope.filter.course !== item.course.name)
+                if ($scope.filters.course !== item.course.name)
                     return false;
 
-        if ((!$scope.filter.mode.presential && item.course.kind === 'Presencial')
-            || (!$scope.filter.mode.distance && item.course.kind === 'EaD'))
+        if ((!$scope.filters.mode.presential && item.course.kind === 'Presencial')
+            || (!$scope.filters.mode.distance && item.course.kind === 'EaD'))
                 return false;
         
-        if ($scope.filter.cost)
-            if ($scope.filter.cost < item.price_with_discount)
+        if ($scope.filters.cost)
+            if ($scope.filters.cost < item.price_with_discount)
                 return false;
         
         return true;
