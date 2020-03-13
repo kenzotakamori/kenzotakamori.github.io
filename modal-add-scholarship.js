@@ -49,7 +49,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
 
     // change mode on click
     $scope.changeModeFilter = function(key) {
-        $scope.filters[key] = !$scope.filters[key];
+        $scope.filters.mode[key] = !$scope.filters.mode[key];
     }
 
     // Function called on any change on filters
@@ -81,5 +81,5 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     }
 
     getOptions();
-    $scope.$watch('filters', $scope.filterResults);
+    // $scope.$watch('filters', $scope.filterResults);
 })
