@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    margin: 8px;
+    margin: 10px;
 }
 
 [ng-click] {

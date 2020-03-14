@@ -3,7 +3,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="common/ui-bootstrap-tpls-0.12.1.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="js/myAccount.js"></script>
+    <script type="text/javascript" src="js/my-account.js"></script>
     <script type="text/javascript" src="modal/modal-add-scholarship.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/my-account.css">
     </head>
     <body ng-app="main">
         <!-- Header -->
@@ -20,13 +21,13 @@
         <!-- Body -->
         <main>
             <div ng-controller="myAccount">
-                <div>
+                <div class="breadcrumbs">
                     <i class="fa fa-angle-left"></i>
-                    Minha conta
+                    <span>Minha conta</span>
                 </div>
                 <h1>Bolsas favoritas</h1>
                 <div>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</div>
-                <table>
+                <table class="semester-filter">
                     <tr><td>Todos os semestres</td></tr>
                     <tr><td>2º semestre de 2019</td></tr>
                     <tr><td>1º semestre de 2020</td></tr>

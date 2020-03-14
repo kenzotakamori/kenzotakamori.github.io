@@ -1,0 +1,36 @@
+main .breadcrumbs {
+    color: #007A8D;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+main .breadcrumbs i {
+    font-size: 15px;
+}
+
+main .breadcrumbs span {
+    margin-left: 5px;
+}
+
+main h1 {
+    font-weight: 600px;
+}
+
+main table .semester-filter {
+    width: 100%;
+    margin-top: 15px;
+    line-height: 30px;
+    font-weight: 600px;
+    border: 1px solid #007A8D;
+    color: #007A8D;
+}
+
+main table .semester-filter tr {
+    display: flex;
+    justify-content: center;
+}
+
+main table .semester-filter tr:nth-child(1) {
+    border: 1px solid #007A8D;
+}
