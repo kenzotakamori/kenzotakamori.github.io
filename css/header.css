@@ -8,6 +8,16 @@ header .header {
     z-index: 1000;
 }
 
+header .fas {
+    font-size: 25px;
+}
+
+.account, header .help {
+    width: 20%;
+    display: inline-grid;
+    padding-top: 10px;
+}
+
 header nav {
     width: 100%;
     background-color: #18ACC4;

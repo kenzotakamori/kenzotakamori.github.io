@@ -40,7 +40,7 @@ i.fab.fa-whatsapp {
     font-weight: 700;
 }
 
-.chat, .email, .help {
+.chat, .email, footer .help {
     background-color: #007A8D;
     width: 33.33%;
     display: inline-grid;
@@ -67,7 +67,7 @@ i.fab.fa-whatsapp {
     width: 100%;
 }
 
-footer .fa, footer .fab, footer .far {
+footer .fa, footer .fab, footer .far, footer .fas {
     font-size: 25px;
 }
 
