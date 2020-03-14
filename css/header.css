@@ -14,10 +14,11 @@ header .fas {
 
 header .divider {
     align-self: stretch;
-    border: 1px solid grey;
+    border: 1px solid #80808045;
     height: auto;
-    margin: 0;
     width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 header .account, header .help {
@@ -35,10 +36,10 @@ header .account span, header .help span{
 
 header .quero-logo {
     width: 70%;
-    max-height: 42px;
+    max-height: 48px;
     display: flex;
     justify-content: center;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 
 header .quero-logo img {
@@ -81,7 +82,15 @@ header li a {
     text-decoration: none;
 }
 
-header li .menu {
+li .menu {
     position: absolute;
     right: 0;
+}
+
+li .menu a {
+    margin-right: 5px;
+}
+
+li .menu i {
+    font-weight: 500px;
 }
