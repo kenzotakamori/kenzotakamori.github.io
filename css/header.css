@@ -3,30 +3,42 @@ header .header {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    box-shadow: 10px #888888;
-    z-index: 1000;
     color: #007A8D;
+    font-size: 12px;
 }
 
 header .fas {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 100;
+}
+
+header .divider {
+    align-self: stretch;
+    border: 1px solid grey;
+    height: auto;
+    margin: 0;
+    width: auto;
 }
 
 header .account, header .help {
     width: 15%;
-    display: inline-grid;
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header .account span, header .help span{
     font-weight: 700;
+    margin-top: 2px;
 }
 
 header .quero-logo {
     width: 70%;
-    max-height: 40px;
-    text-align: center;
+    max-height: 42px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
 }
 
 header .quero-logo img {
@@ -37,6 +49,7 @@ header .quero-logo img {
 header nav {
     width: 100%;
     background-color: #18ACC4;
+    font-weight: 700;
 }
 
 header ul {
@@ -66,4 +79,9 @@ header li a {
     color: white;
     text-align: center;
     text-decoration: none;
+}
+
+header li .menu {
+    position: absolute;
+    right: 0;
 }
