@@ -6,16 +6,26 @@ header .header {
     text-align: center;
     box-shadow: 10px #888888;
     z-index: 1000;
+    color: #007A8D;
 }
 
 header .fas {
     font-size: 25px;
+    font-weight: 100;
 }
 
-.account, header .help {
+header .account, header .help {
     width: 20%;
     display: inline-grid;
     padding-top: 10px;
+}
+
+header .quero-logo {
+    width: 60%;
+}
+
+header .quero-logo img {
+    width: 50%;
 }
 
 header nav {
