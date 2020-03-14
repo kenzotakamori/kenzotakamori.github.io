@@ -4,7 +4,7 @@ app.controller('myAccount', function($scope, $http, $modal) {
         var modalInstance = $modal.open({
             animation: true,
             scope: $scope,
-            templateUrl: 'modal-add-scholarship.html',
+            templateUrl: 'modal/modal-add-scholarship.html',
             controller: 'ModalAddScholarship',
             size: 'lg',
             resolve: {
@@ -28,7 +28,7 @@ app.controller('myAccount', function($scope, $http, $modal) {
             $scope.scholarships = selection;
         } else {
             // if not, call http GET
-            $http.get('db.json').then(function(response){
+            $http.get('common/db.json').then(function(response){
                 $scope.scholarships = response.data;
                 console.log('Scholarships: ', $scope.scholarships)
                 angular.forEach($scope.scholarships, function(item){

@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script type="text/javascript" src="ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script type="text/javascript" src="common/ui-bootstrap-tpls-0.12.1.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="myAccount.js"></script>
-    <script type="text/javascript" src="modal-add-scholarship.js"></script>
+    <script type="text/javascript" src="js/myAccount.js"></script>
+    <script type="text/javascript" src="modal/modal-add-scholarship.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
-        <link rel="stylesheet" href="hide.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/hide.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
     </head>
     <body ng-app="main">
         <!-- Header -->
-        <header>
-            <div class="header">
-                <div>help</div>
-                <div>logo</div>
-                <div>account</div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Minha conta</a></li>
-                    <li>
-                        <a href="">Menu</a>
-                        <i class="fa fa-angle-down"></i>
-                    </li>
-                    <li class="hide_for_mobile"><a href="">Pré-matrículas</a></li>
-                    <li class="hide_for_mobile"><a href="">Bolsas favoritas</a></li>
-                </ul>
-            </nav>
-        </header>
+        <header-quero></header-quero>
         <!-- Body -->
         <main>
             <div ng-controller="myAccount">
                 <div>
                     <i class="fa fa-angle-left"></i>
-                    Minha conta {{x}}
+                    Minha conta
                 </div>
                 <h1>Bolsas favoritas</h1>
                 <div>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</div>
@@ -58,39 +43,6 @@
             </div>
         </main>
         <!-- Footer -->
-        <footer>
-            <div class="footer-row">
-                <div class="whatsapp">
-                    <div>
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <p>
-                        <span>
-                            0800 123 222<br>
-                        </span>
-                        Segunda a sexta de 8h às 22h
-                    </p>
-                </div>
-            </div>
-            <div class="footer-row">
-                <div class="chat">
-                    <i class="fa fa-comments"></i>
-                    Chat
-                </div>
-                <div class="email">
-                    <i class="far fa-envelope"></i>
-                    E-mail
-                </div>
-                <div class="help">
-                    <i class="fa fa-info"></i>
-                    Ajuda
-                </div>
-            </div>
-            <div class="footer-row">
-                <div class="footer-message">
-                    <p>Feito com <i class="fa fa-heart"></i> pela Quero Educação</p>
-                </div>
-            </div>            
-        </footer>
+        <footer-quero></footer-quero>   
     </body>
 </html>
