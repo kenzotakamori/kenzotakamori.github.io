@@ -14,23 +14,52 @@ main .breadcrumbs span {
 }
 
 main h1 {
-    font-weight: 600px;
+    font-weight: 600;
 }
 
-main table .semester-filter {
+main table.semester-filter {
     width: 100%;
     margin-top: 15px;
     line-height: 30px;
-    font-weight: 600px;
+    font-weight: 600;
     border: 1px solid #007A8D;
     color: #007A8D;
 }
 
-main table .semester-filter tr {
+main table.semester-filter tr {
     display: flex;
     justify-content: center;
 }
 
-main table .semester-filter tr:nth-child(1) {
+main table.semester-filter tr:nth-child(1) {
     border: 1px solid #007A8D;
+}
+
+main .card-to-add {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0px 2px 5px #80808045;
+    background-color: #fff;
+}
+
+main .card-to-add i {
+    font-weight: 100;
+    font-size: 60px;
+    color: #18ACC4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .card-to-add span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+main .card-to-add span {
+    font-size: 12px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 15px;
 }
