@@ -41,11 +41,11 @@
         <div ng-repeat="item in itemsShown" ng-click="changeSelection(item)">
             <span ng-if="!selected"><i class="far fa-square"></i></span>
             <span ng-if="selected"><i class="far fa-check-square"></i></span>
-            <img src="">
+            <img src="{{item.university.logo_url}}">
             <div class="scholarship-info">
                 <p>{{item.course.name}}</p>
                 {{item.course.level}}
-                Bolsa de {{item.discount_percentage}}<br>
+                Bolsa de {{item.discount_percentage}}%<br>
                 R$ {{item.price_with_discount}}/mês
             </div>
         </div>
