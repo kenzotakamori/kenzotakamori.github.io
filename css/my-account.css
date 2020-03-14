@@ -15,14 +15,16 @@ main .breadcrumbs span {
 
 main h1 {
     font-weight: 600;
+    font-size: 28px;
 }
 
 main table.semester-filter {
-    width: 100%;
+    display: grid;
     margin-top: 15px;
-    line-height: 30px;
+    line-height: 40px;
     font-weight: 600;
     border: 1px solid #007A8D;
+    border-radius: 10px;
     color: #007A8D;
 }
 
@@ -31,7 +33,7 @@ main table.semester-filter tr {
     justify-content: center;
 }
 
-main table.semester-filter tr:nth-child(1) {
+main table.semester-filter tr:nth-child(2) {
     border: 1px solid #007A8D;
 }
 
@@ -57,9 +59,9 @@ main .card-to-add span {
     font-size: 14px;
 }
 
-main .card-to-add span {
+main .card-to-add p {
     font-size: 12px;
     padding-right: 50px;
     padding-left: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }

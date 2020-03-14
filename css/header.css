@@ -82,15 +82,15 @@ header li a {
     text-decoration: none;
 }
 
-li .menu {
+header li.menu {
     position: absolute;
     right: 0;
 }
 
-li .menu a {
+header li.menu a {
     margin-right: 5px;
 }
 
-li .menu i {
+header li.menu i {
     font-weight: 500px;
 }
