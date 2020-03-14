@@ -4,7 +4,7 @@ app.directive("headerQuero", function() {
       templateUrl: "directives/header-quero.html"
     };
 });
-app.directive("footerQueroDirective", function() {
+app.directive("footerQuero", function() {
     return {
       templateUrl: "directives/footer-quero.html"
     };
