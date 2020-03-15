@@ -22,7 +22,7 @@ app.controller('myAccount', function($scope, $http, $modal) {
     }
 
     function getScholarships() {
-        var selection = JSON.parse(localStorage.getItem('b2bUnits')) || [];
+        var selection = JSON.parse(localStorage.getItem('selectedScholarships')) || [];
         // checking if the scholarships are saved on browser
         if (selection.length > 0) {
             $scope.scholarships = selection;

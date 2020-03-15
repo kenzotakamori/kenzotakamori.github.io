@@ -57,7 +57,7 @@
     </div>
     <div class="modal-footer">
         <div class="cancel-button" ng-click="cancel()">Cancelar</div>
-        <div class="add-button add-disabled" ng-if="checkSelection()">Adicionar bolsa(s)</div>
+        <div class="add-button add-disabled" ng-if="!checkSelection()">Adicionar bolsa(s)</div>
         <div class="add-button add-enabled" ng-if="checkSelection()" ng-click="ok()">Adicionar bolsa(s)</div>
     </div>
     </div>
