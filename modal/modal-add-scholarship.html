@@ -17,7 +17,6 @@
         </div>
         <div class="filter-mode">
             <p>COMO VOCÊ QUER ESTUDAR?</p>
-            <div>
             <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
             <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
             <span>Presencial</span>
@@ -40,17 +39,21 @@
                 <i class="fa fa-angle-down"></i>
             </div>
         </div>
-        <div ng-repeat="item in itemsShown" ng-click="changeSelection(item)">
-            <span ng-if="!item.selected"><i class="far fa-square"></i></span>
-            <span ng-if="item.selected"><i class="far fa-check-square"></i></span>
-            <img src="{{item.university.logo_url}}">
-            <div class="scholarship-info">
-                <p>{{item.course.name}}</p>
-                {{item.course.level}}
-                Bolsa de {{item.discount_percentage}}%<br>
-                R$ {{item.price_with_discount}}/mês
-            </div>
-        </div>
+        <ul>
+            <li class="scholarship-line" ng-repeat="item in itemsShown" ng-click="changeSelection(item)">
+                <span ng-if="!item.selected"><i class="far fa-square"></i></span>
+                <span ng-if="item.selected"><i class="far fa-check-square"></i></span>
+                <div class="logo">
+                    <img src="{{item.university.logo_url}}">
+                </div>
+                <div class="scholarship-info">
+                    <p>{{item.course.name}}</p>
+                    <span>{{item.course.level}}</span>
+                    <br>Bolsa de <strong>{{item.discount_percentage}}%<br>
+                    R$ {{item.price_with_discount}}/mês</strong>
+                </div>
+            </li>
+        </ul>
     </div>
     <div class="modal-footer">
         <button ng-click="cancel">Cancelar</button>
