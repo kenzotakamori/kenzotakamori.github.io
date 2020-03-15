@@ -53,7 +53,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
         var selectedItems = $scope.items.filter(function(item){
             return item.selected;
         })
-        $scope.enableAddButton = selectedItems.length >= 0;
+        $scope.enableAddButton = selectedItems.length > 0;
     }
 
     // change mode on click

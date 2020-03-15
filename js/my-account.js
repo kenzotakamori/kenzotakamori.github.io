@@ -41,6 +41,37 @@ app.controller('myAccount', function($scope, $http, $modal) {
         }
     }
 
+    $scope.getSelectedScholarships = function() {
+        return $scope.scholarships.filter(function(item){
+            return item.selected === true;
+        })
+    }
+
+    // Exclude scholarship on click
+    $scope.exclude = function(item) {
+        var confirmExclusion = function() {
+            item.selected = false;
+            localStorage.setItem('selectedScholarships', $scope.scholarships)
+        }
+        var modalInstance = $modal.open({
+            animation: true,
+            scope: $scope,
+            templateUrl: 'modal/modal-exclude-scholarship.html',
+            controller: 'ModalExcludeScholarship',
+            size: 'lg',
+            resolve: {
+                confirmExclusion: function(){
+                    return confirmExclusion;
+                }
+            }
+        })
+    }
+
+    // See Offer?
+    $scope.seeOffer = function(item) {
+        console.log('Redirecting to status page.')
+    }
+
     function init() {
         getScholarships();
     }
