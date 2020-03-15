@@ -12,6 +12,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     }
     $scope.cityOptions = [];
     $scope.courseOptions = [];
+    $scope.enableAddButton = false;
     
     // Get City and Course options
     function getOptions() {
@@ -47,6 +48,14 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
         return true;
     }
 
+    // Check Selection and enable/disable button
+    function checkSelection() {
+        var selectedItems = $scope.items.filter(function(item){
+            return item.selected;
+        })
+        $scope.enableAddButton = selectedItems.length >= 0;
+    }
+
     // change mode on click
     $scope.changeModeFilter = function(key) {
         $scope.filters.mode[key] = !$scope.filters.mode[key];
@@ -60,14 +69,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     // Change selection on click
     $scope.changeSelection = function(item) {
         item.selected = !item.selected;
-    }
-
-    // Check Selection and enable/disable button
-    $scope.checkSelection = function() {
-        var selectedItems = $scope.items.filter(function(item){
-            return item.selected;
-        })
-        return selectedItems.length >= 0;
+        checkSelection();
     }
 
     // Button to save selected scholarships
@@ -80,6 +82,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
         $modalInstance.dismiss('cancel');
     }
 
+    checkSelection();
     getOptions();
     $scope.$watch('filters', $scope.filterResults, true);
 })
