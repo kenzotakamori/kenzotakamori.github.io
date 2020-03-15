@@ -1,6 +1,8 @@
 <div id="add-scholarship">
-    <div class="modal-header">
-
+    <div class="close-modal">
+        <span>
+            <i class="fas fa-times"></i>
+        </span>
     </div>
     <div class="modal-body">
         <h1>Adicionar bolsa</h1>
@@ -39,8 +41,8 @@
             </div>
         </div>
         <div ng-repeat="item in itemsShown" ng-click="changeSelection(item)">
-            <span ng-if="!selected"><i class="far fa-square"></i></span>
-            <span ng-if="selected"><i class="far fa-check-square"></i></span>
+            <span ng-if="!item.selected"><i class="far fa-square"></i></span>
+            <span ng-if="item.selected"><i class="far fa-check-square"></i></span>
             <img src="{{item.university.logo_url}}">
             <div class="scholarship-info">
                 <p>{{item.course.name}}</p>
@@ -51,8 +53,8 @@
         </div>
     </div>
     <div class="modal-footer">
-        <button ng-click="">Cancelar</button>
-        <button class="add-disabled" ng-if="!checkSelection()" ng-click="cancel">Adicionar bolsa(s)</button>
+        <button ng-click="cancel">Cancelar</button>
+        <button class="add-disabled" ng-if="!checkSelection()">Adicionar bolsa(s)</button>
         <button class="add-enabled" ng-if="checkSelection()" ng-click="ok">Adicionar bolsa(s)</button>
     </div>
     </div>
