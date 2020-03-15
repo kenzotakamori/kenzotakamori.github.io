@@ -26,6 +26,10 @@
     margin-top: 10px;
 }
 
+.modal-body {
+    padding-left: 0;
+}
+
 .filter-city p, .filter-course p, .filter-mode p, .filter-cost p {
     font-weight: 700;
     font-size: 12px;
@@ -42,23 +46,47 @@
 li.scholarship-line {
     display: inline-flex;
     flex-direction: row;
+    text-align: center;
+    border-bottom: 2px solid #80808045;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li.scholarship-line:first-child {
+    border-top: 2px solid #80808045;
 }
 
 li.scholarship-info .fa-square, li.scholarship-info .fa-check-square {
     width: 15%    
 }
 
-li.scholarship-line img {
-    width: 60%;
-    margin-left: 30px;
+li.scholarship-line span {
+    width: 15%;
+    position: relative;
+}
+
+li.scholarship-line span i{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+li.scholarship-line .logo {
+    width: 50%;
 }
 
 li.scholarship-line .scholarship-info {
     width: 35%;
+    text-align: left;
 }
 
 li.scholarship-line .scholarship-info p {
     font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
     color: #007A8D;
 }
 
@@ -67,6 +95,5 @@ li.scholarship-line .scholarship-info span {
 }
 
 li.scholarship-line .scholarship-info strong {
-    margin-top: 5px;
     color: #0FA866;
 }
