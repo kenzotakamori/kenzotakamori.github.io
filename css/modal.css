@@ -50,6 +50,7 @@ li.scholarship-line {
     border-bottom: 2px solid #80808045;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 li.scholarship-line:first-child {
@@ -101,3 +102,44 @@ li.scholarship-line .scholarship-info span {
 li.scholarship-line .scholarship-info strong {
     color: #0FA866;
 }
+
+.modal-footer {
+    border: none;
+    padding-top: 0px;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-footer .cancel-button {
+    border-radius: 5px;
+    width: 40%;
+    border: 1px solid #007A8D;
+    height: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #007A8D;
+    margin-right: 15px;
+}
+
+.modal-footer .add-button {
+    border-radius: 5px;
+    width: 60%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.modal-footer .add-button.add-disabled {
+    border: 1px solid grey;
+    color: grey;
+    background-color: #d3d3d3;
+}
+
+.modal-footer .add-button.add-enabled {
+    border: 1px solid #DE9E1F;
+    color: #1F2D30;
+    background-color: #FDCB13;
+}
+
