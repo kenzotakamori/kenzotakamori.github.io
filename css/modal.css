@@ -26,7 +26,7 @@
     margin-top: 10px;
 }
 
-.modal-body {
+.modal-body ul {
     padding-left: 0;
 }
 
@@ -76,6 +76,10 @@ li.scholarship-line span i{
 
 li.scholarship-line .logo {
     width: 50%;
+}
+
+li.scholarship-line .logo img {
+    width: 80%;
 }
 
 li.scholarship-line .scholarship-info {
