@@ -14,6 +14,6 @@ app.directive("starRating", function() {
     scope: {
       rate: '@'
    },
-   templateUrl:'<div class="title"><h2>{{title}}</h2></div>'
+   templateUrl: "directives/star-rating.html"
   };
 });
