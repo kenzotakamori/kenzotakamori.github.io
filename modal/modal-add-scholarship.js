@@ -14,7 +14,8 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.courseOptions = [];
     $scope.enableAddButton = false;
     $scope.reverse = false;
-    
+    $scope.costSlider = 2000;
+
     // Get City and Course options
     function getOptions() {
         angular.forEach($scope.items, function(item){
@@ -75,6 +76,10 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
 
     $scope.changeSort = function() {
         $scope.reverse = !$scope.reverse;
+    }
+
+    $scope.changeFilterCost = function() {
+        $scope.filters.cost = $scope.costSlider
     }
 
     // Button to save selected scholarships
