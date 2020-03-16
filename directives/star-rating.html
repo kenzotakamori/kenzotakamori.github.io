@@ -1,27 +1,5 @@
 <div class="star-rating">
-    <div class="star-1">
-        <i class="far fa-star" ng-show="rate == 0.0"></i>
-        <i class="fas fa-star-half-alt" ng-show="rate >= 0.5 && rate < 1.0"></i>
-        <i class="fas fa-star" ng-show="rate >= 1.0"></i>
-    </div>
-    <div class="star-2">
-        <i class="far fa-star" ng-show="rate <= 1.0"></i>
-        <i class="fas fa-star-half-alt" ng-show="rate >= 1.5 && rate < 2.0"></i>
-        <i class="fas fa-star" ng-show="rate >= 2.0"></i>
-    </div>
-    <div class="star-1">
-        <i class="far fa-star" ng-show="rate <= 2.0"></i>
-        <i class="fas fa-star-half-alt" ng-show="rate >= 2.5 && rate < 3.0"></i>
-        <i class="fas fa-star" ng-show="rate >= 3.0"></i>
-    </div>
-    <div class="star-1">
-        <i class="far fa-star" ng-show="rate <= 3.0"></i>
-        <i class="fas fa-star-half-alt" ng-show="rate >= 3.5 && rate < 4.0"></i>
-        <i class="fas fa-star" ng-show="rate >= 4.0"></i>
-    </div>
-    <div class="star-1">
-        <i class="far fa-star" ng-show="rate <= 4.0"></i>
-        <i class="fas fa-star-half-alt" ng-show="rate >= 4.5 && rate < 4.0"></i>
-        <i class="fas fa-star" ng-show="rate == 5.0"></i>
+    <div ng-repeat="star in stars">
+        <i class="{{star}}"></i>
     </div>
 </div>
