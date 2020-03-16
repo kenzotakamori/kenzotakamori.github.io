@@ -29,9 +29,18 @@
                 <h1>Bolsas favoritas</h1>
                 <div>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</div>
                 <table class="semester-filter">
-                    <tr><td>Todos os semestres</td></tr>
-                    <tr><td>2º semestre de 2019</td></tr>
-                    <tr><td>1º semestre de 2020</td></tr>
+                    <tr>
+                        <td class="selected" ng-show="semester=='all'">Todos os semestres</td>
+                        <td class="unselected" ng-show="semester!='all'" ng-click="filterSemester('all')">Todos os semestres</td>
+                    </tr>
+                    <tr>
+                        <td class="selected" ng-show="semester=='2019.2'">2º semestre de 2019</td>
+                        <td class="unselected" ng-show="semester!='2019.2'" ng-click="filterSemester('2019.2')">2º semestre de 2019</td>
+                    </tr>
+                    <tr>
+                        <td class="selected" ng-show="semester=='2020.1'">1º semestre de 2020</td>
+                        <td class="unselected" ng-show="semester!='2020.1'" ng-click="filterSemester('2020.1')">1º semestre de 2020</td>
+                    </tr>
                 </table>
                 <div class="card-to-add" ng-click="openModal()">
                     <i class="fa fa-plus-circle"></i>
@@ -62,7 +71,7 @@
                         <div class="card-footer">
                             <div class="exclude" ng-click="exclude(s)">Excluir</div>
                             <div class="see-offer" ng-click="" ng-if="s.enabled">Ver Oferta</div>
-                            <div class="unavailable" ng-click="" ng-if="!s.enabled">Indisponível</div>
+                            <div class="unavailable" ng-if="!s.enabled">Indisponível</div>
                         </div>
                     </li>
                 </ul>

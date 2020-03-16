@@ -40,9 +40,16 @@ app.controller('myAccount', function($scope, $http, $modal) {
     }
 
     $scope.getSelectedScholarships = function() {
-        return $scope.scholarships.filter(function(item){
+        var arr = $scope.scholarships.filter(function(item){
             return item.selected === true;
         })
+        if ($scope.semester ==  'all') {
+            return arr;
+        } else {
+            return arr.filter(function(item){
+                return item.enrollment_semester == $scope.semester;
+            })
+        }
     }
 
     // Exclude scholarship on click
@@ -51,9 +58,9 @@ app.controller('myAccount', function($scope, $http, $modal) {
         localStorage.setItem('selectedScholarships', JSON.stringify($scope.scholarships));
     }
 
-    // See Offer?
-    $scope.seeOffer = function(item) {
-        console.log('Redirecting to status page.')
+    $scope.semester = 'all';
+    $scope.filterSemester = function(value) {
+        $scope.semester = 'value';
     }
 
     function init() {

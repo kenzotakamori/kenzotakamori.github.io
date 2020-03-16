@@ -37,6 +37,11 @@ main table.semester-filter tr:nth-child(2) {
     border: 1px solid #007A8D;
 }
 
+main table.semester-filter tr .selected {
+    color: #FBFBFB;
+    background-color: #007A8D;
+}
+
 main .card-to-add {
     display: flex;
     flex-direction: column;
