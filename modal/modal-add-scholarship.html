@@ -17,17 +17,21 @@
         </div>
         <div class="filter-mode">
             <p>COMO VOCÊ QUER ESTUDAR?</p>
-            <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
-            <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
-            <span>Presencial</span>
-            <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-square"></i></span>
-            <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-check-square"></i></span>
-            <span>À distância</span>
+            <div class="options">
+                <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
+                <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
+                <span class="text">Presencial</span>
+                <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-square"></i></span>
+                <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-check-square"></i></span>
+                <span class="text">À distância</span>
+            </div>            
         </div>
         <div class="filter-cost">
             <p>ATÉ QUANTO PODE PAGAR?</p>
-            <span>Valor</span>
-            <div class="bar"></div>
+            <span>{{filter.cost | currency: "R$"}}</span>
+            <div class="slide-container">
+                <input type="range" min="0" max="2000" value="2000" class="slider" ng-model="filter.cost">
+            </div>
         </div>
         <div class="sort">
             <p>Resultado: <span>Ordenar por</span></p>
