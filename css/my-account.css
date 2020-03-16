@@ -93,11 +93,6 @@ li.selected-scholarships .course-name {
     color: #007A8D;
 }
 
-li.selected-scholarships .star-rate {
-    /* to be defined */
-    border-bottom: 2px solid #80808045;
-}
-
 li.selected-scholarships p.university-name {
     text-transform: uppercase;
     font-weight: 700;
@@ -145,6 +140,19 @@ li.selected-scholarships p.price-with-discount span {
     color: #0FA866;
 }
 
+li.selected-scholarships .unavailable-scholarship p {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0;
+}
+
+li.selected-scholarships .unavailable-scholarship span {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+
 .card-footer {
     display: inline-flex;
     margin-top: 15px;
@@ -186,5 +194,16 @@ li.selected-scholarships p.price-with-discount span {
 .star-rating {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     color: #FDCB13;
+    border-bottom: 2px solid #80808045;
+}
+
+.star-rating span {
+    color: #1F2D30;
+    font-weight: 700;
+}
+
+.star-rating div {
+    padding-left: 5px;
 }

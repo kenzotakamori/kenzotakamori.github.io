@@ -48,11 +48,17 @@
                         <star-rating rate="{{s.university.score}}"></star-rating>
                         <p class="kind-shift">{{s.course.kind}} {{s.course.shift}}</p>
                         <p class="start-date">Início das aulas em: <span>{{s.start_date}}</span></p>
-                        <b>Mensalidade com o Quero Bolsa:</b>
-                        <p class="full-price">{{s.full_price | currency : "R$"}}</p>
-                        <p class="price-with-discount">
-                            <span>{{s.price_with_discount | currency : "R$"}}</span> /mês
-                        </p>
+                        <div ng-show="item.enabled">
+                            <b>Mensalidade com o Quero Bolsa:</b>
+                            <p class="full-price">{{s.full_price | currency : "R$"}}</p>
+                            <p class="price-with-discount">
+                                <span>{{s.price_with_discount | currency : "R$"}}</span> /mês
+                            </p>
+                        </div>
+                        <div class="unavailable-scholarship" ng-show="!item.enabled">
+                            <p>Bolsa indisponível</p>
+                            <span>Entre em contato com nosso atendimento pra saber mais.</span>
+                        </div>
                         <div class="card-footer">
                             <div class="exclude" ng-click="exclude(s)">Excluir</div>
                             <div class="see-offer" ng-click="" ng-if="!item.enabled">Ver Oferta</div>
