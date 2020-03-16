@@ -51,15 +51,18 @@
 .sort p {
     width: 100%;
     font-weight: 700;
+    margin: 20px 0 0;
 }
 
 .sort p span {
-    text-align: right;
+    float: right;
 }
 
 .sort div {
     color: #007A8D;
     text-align: right;
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 
 li.scholarship-line {
@@ -81,7 +84,7 @@ li.scholarship-info .fa-square, li.scholarship-info .fa-check-square {
 }
 
 li.scholarship-line span {
-    width: 15%;
+    width: 5%;
     position: relative;
 }
 
