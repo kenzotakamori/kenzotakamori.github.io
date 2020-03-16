@@ -8,7 +8,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
             presential: true,
             distance: true
         },
-        cost: null,
+        cost: 2000,
     }
     $scope.cityOptions = [];
     $scope.courseOptions = [];

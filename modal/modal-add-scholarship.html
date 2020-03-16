@@ -28,7 +28,7 @@
         </div>
         <div class="filter-cost">
             <p>ATÉ QUANTO PODE PAGAR?</p>
-            <span>{{filters.cost | currency: "R$"}}</span>
+            <span>R$ {{filters.cost | number:0}}</span>
             <div class="slider-container">
                 <input 
                     type="range" 
@@ -37,7 +37,7 @@
                     value="2000" 
                     class="slider" 
                     ng-model="filters.cost"
-                    ng-model-options='{ debounce: 1000 }'>
+                    ng-model-options='{ debounce: 500 }'>
             </div>
         </div>
         <div class="sort">

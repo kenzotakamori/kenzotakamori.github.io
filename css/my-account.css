@@ -182,3 +182,9 @@ li.selected-scholarships p.price-with-discount span {
     color: grey;
     background-color: #d3d3d3;
 }
+
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    color: #FDCB13;
+}

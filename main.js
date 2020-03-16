@@ -9,3 +9,11 @@ app.directive("footerQuero", function() {
       templateUrl: "directives/footer-quero.html"
     };
 });
+app.directive("starRating", function() {
+  return {
+    scope: {
+      rate: '@'
+   },
+   templateUrl:'<div class="title"><h2>{{title}}</h2></div>'
+  };
+});

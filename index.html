@@ -38,7 +38,6 @@
                     <span>Adicionar bolsa</span>
                     <p>Clique para adicionar bolsas de cursos do seu interesse</p>
                 </div>
-                <!-- Colocar ng-repeat para cartões aqui -->
                 <ul>
                     <li class="selected-scholarships" ng-repeat="s in getSelectedScholarships()">
                         <div class="my-account-logo">
@@ -46,9 +45,7 @@
                         </div>
                         <p class="university-name">{{s.university.name}}</p>
                         <p class="course-name">{{s.course.name}}</p>
-                        <div class="star-rate">
-                            <!-- TODO: search  -->
-                        </div>
+                        <star-rating rate="university.score"></star-rating>
                         <p class="kind-shift">{{s.course.kind}} {{s.course.shift}}</p>
                         <p class="start-date">Início das aulas em: <span>{{s.start_date}}</span></p>
                         <b>Mensalidade com o Quero Bolsa:</b>
