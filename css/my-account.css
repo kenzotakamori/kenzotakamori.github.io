@@ -143,6 +143,8 @@ li.selected-scholarships p.price-with-discount span {
 
 li.selected-scholarships .unavailable-scholarship {
     width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 li.selected-scholarships .unavailable-scholarship p {
@@ -154,7 +156,6 @@ li.selected-scholarships .unavailable-scholarship p {
 
 li.selected-scholarships .unavailable-scholarship span {
     font-size: 11px;
-    margin-bottom: 10px;
 }
 
 
@@ -202,6 +203,7 @@ li.selected-scholarships .unavailable-scholarship span {
     justify-content: center;
     color: #FDCB13;
     border-bottom: 2px solid #80808045;
+    padding-bottom: 15px;
 }
 
 .star-rating span {
