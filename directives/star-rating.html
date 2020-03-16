@@ -1,5 +1,5 @@
 <div class="star-rating">
-    <div ng-repeat="star in stars">
+    <div ng-repeat="star in stars track by $index">
         <i class="{{star}}"></i>
     </div>
 </div>
