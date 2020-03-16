@@ -104,13 +104,14 @@ li.selected-scholarships p.kind-shift {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    padding-top: 10px;
+    margin: 0;
+    padding-top: 15px;
 }
 
 li.selected-scholarships p.start-date {
     font-size: 12px;
     border-bottom: 2px solid #80808045;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 li.selected-scholarships p.start-date span {
@@ -138,6 +139,10 @@ li.selected-scholarships p.price-with-discount span {
     font-size: 18px;
     font-weight: 700;
     color: #0FA866;
+}
+
+li.selected-scholarships .unavailable-scholarship {
+    width: 90%;
 }
 
 li.selected-scholarships .unavailable-scholarship p {
