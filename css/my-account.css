@@ -43,7 +43,6 @@ main .card-to-add {
     text-align: center;
     margin-top: 15px;
     box-shadow: 0px 2px 5px #80808045;
-    background-color: #fff;
 }
 
 main .card-to-add i {
@@ -66,19 +65,32 @@ main .card-to-add p {
     margin-bottom: 20px;
 }
 
+main ul {
+    padding: 0;
+}
+
 li.selected-scholarships {
     display: inline-flex;
     flex-direction: column;
     box-shadow: 0px 2px 5px #80808045;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
 }
 
 li.selected-scholarships .my-account-logo {
-    max-width: 50%
+    max-width: 50%;
+    margin-bottom: 25px;
 }
 
 li.selected-scholarships .my-account-logo img {
-    width: 100%
+    width: 100%;
+}
+
+li.selected-scholarships .course-name {
+    font-weight: 700;
+    color: #007A8D;
 }
 
 li.selected-scholarships .star-rate {
@@ -92,9 +104,14 @@ li.selected-scholarships p.university-name, li.selected-scholarships p.kind-shif
     font-size: 14px;
 }
 
+li.selected-scholarships p.kind-shift {
+    padding-top: 10px;
+}
+
 li.selected-scholarships p.start-date {
     font-size: 12px;
     border-bottom: 2px solid #80808045;
+    padding-bottom: 10px;
 }
 
 li.selected-scholarships p.start-date span {
@@ -104,6 +121,7 @@ li.selected-scholarships p.start-date span {
 li.selected-scholarships b {
     font-size: 12px;
     font-weight: 700;
+    padding: 10px;
 }
 
 
@@ -120,6 +138,11 @@ li.selected-scholarships p.price-with-discount span {
     font-size: 18px;
     font-weight: 700;
     color: #0FA866;
+}
+
+.card-footer {
+    display: inline-flex;
+    margin-top: 15px;
 }
 
 .card-footer .exclude {
