@@ -10,10 +10,10 @@ app.directive("footerQuero", function() {
     };
 });
 app.directive("starRating", function() {
-  return {
-    scope: {
-      rate: '@'
-   },
-   templateUrl: "directives/star-rating.html"
-  };
+    return {
+      scope: {
+        rate: '@'
+      },
+      templateUrl: "directives/star-rating.html"
+    };
 });
