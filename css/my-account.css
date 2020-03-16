@@ -33,6 +33,11 @@ main table.semester-filter tr {
     justify-content: center;
 }
 
+main table.semester-filter td {
+    width: 100%;
+    text-align: center;
+}
+
 main table.semester-filter tr:nth-child(2) {
     border: 1px solid #007A8D;
 }
