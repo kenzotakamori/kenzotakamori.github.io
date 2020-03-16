@@ -60,7 +60,7 @@ app.controller('myAccount', function($scope, $http, $modal) {
 
     $scope.semester = 'all';
     $scope.filterSemester = function(value) {
-        $scope.semester = 'value';
+        $scope.semester = value;
     }
 
     function init() {
