@@ -53,9 +53,9 @@
                         <p class="kind-shift">{{s.course.kind}} {{s.course.shift}}</p>
                         <p class="start-date">Início das aulas em: <span>{{s.start_date}}</span></p>
                         <b>Mensalidade com o Quero Bolsa:</b>
-                        <p class="full-price">R$ {{s.full_price | currency}}</p>
-                        <p class="price with discount">
-                            <span>R$ {{s.price_with_discount | currency}}</span>/mês
+                        <p class="full-price">{{s.full_price | currency : "R$"}}</p>
+                        <p class="price-with-discount">
+                            <span>{{s.price_with_discount | currency : "R$}}</span> /mês
                         </p>
                         <div class="card-footer">
                             <div class="exclude" ng-click="exclude(s)">Excluir</div>

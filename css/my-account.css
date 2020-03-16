@@ -98,13 +98,17 @@ li.selected-scholarships .star-rate {
     border-bottom: 2px solid #80808045;
 }
 
-li.selected-scholarships p.university-name, li.selected-scholarships p.kind-shift {
+li.selected-scholarships p.university-name {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
+    margin-bottom: 5px;
 }
 
 li.selected-scholarships p.kind-shift {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
     padding-top: 10px;
 }
 
@@ -126,12 +130,13 @@ li.selected-scholarships b {
 
 
 li.selected-scholarships p.full-price {
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: line-through;
+    margin: 0;
 }
 
 li.selected-scholarships p.price-with-discount {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 li.selected-scholarships p.price-with-discount span {
