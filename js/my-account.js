@@ -30,13 +30,11 @@ app.controller('myAccount', function($scope, $http, $modal) {
             // if not, call http GET
             $http.get('common/db.json').then(function(response){
                 $scope.scholarships = response.data;
-                console.log('Scholarships: ', $scope.scholarships)
                 angular.forEach($scope.scholarships, function(item){
                     item.selected = false;
                 })
             }, function(error){
-                // TODO: add treatment in case of service going wrong
-                console.log('Ooops! Something went wrong.')
+                
             })
         }
     }
@@ -50,7 +48,7 @@ app.controller('myAccount', function($scope, $http, $modal) {
     // Exclude scholarship on click
     $scope.exclude = function(item) {
         item.selected = false;
-        localStorage.setItem('selectedScholarships', $scope.scholarships);
+        localStorage.setItem('selectedScholarships', JSON.stringify($scope.scholarships));
     }
 
     // See Offer?
