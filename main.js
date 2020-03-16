@@ -16,7 +16,7 @@ app.directive("starRating", function() {
       },
       templateUrl: "directives/star-rating.html",
       controller: function($scope) {
-        function validateRate() {
+        function validateRate(rate) {
           var arr = []
           var n = Math.floor(rate)
           var dec = rate - n
