@@ -49,22 +49,8 @@ app.controller('myAccount', function($scope, $http, $modal) {
 
     // Exclude scholarship on click
     $scope.exclude = function(item) {
-        var confirmExclusion = function() {
-            item.selected = false;
-            localStorage.setItem('selectedScholarships', $scope.scholarships)
-        }
-        var modalInstance = $modal.open({
-            animation: true,
-            scope: $scope,
-            templateUrl: 'modal/modal-exclude-scholarship.html',
-            controller: 'ModalExcludeScholarship',
-            size: 'lg',
-            resolve: {
-                confirmExclusion: function(){
-                    return confirmExclusion;
-                }
-            }
-        })
+        item.selected = false;
+        localStorage.setItem('selectedScholarships', $scope.scholarships);
     }
 
     // See Offer?

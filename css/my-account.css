@@ -171,3 +171,14 @@ li.selected-scholarships p.price-with-discount span {
     color: #1F2D30;
     background-color: #FDCB13;
 }
+
+.card-footer .unavailable {
+    border-radius: 5px;
+    width: 60%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    border: 1px solid grey;
+    color: grey;
+    background-color: #d3d3d3;
+}

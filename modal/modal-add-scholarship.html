@@ -29,18 +29,16 @@
             <span>Valor</span>
             <div class="bar"></div>
         </div>
-        <div>
-            <p>Resultado:</p>
-            <div>
-                <span>Ordenar por</span>
-                <div ng-click="changeSort">
-                    {{}}
-                </div>
-                <i class="fa fa-angle-down"></i>
-            </div>
+        <div class="sort">
+            <p>Resultado: <span>Ordernar por</span></p>
+            <div ng-click="changeSort">
+                Nome da faculdade
+                <i class="fa fa-angle-down" ng-if="!sorted"></i>
+                <i class="fa fa-angle-up" ng-if="reverse"></i>
+            </div>            
         </div>
         <ul>
-            <li class="scholarship-line" ng-repeat="item in itemsShown" ng-click="changeSelection(item)">
+            <li class="scholarship-line" ng-repeat="item in itemsShown | orderBy: university.name: reverse" ng-click="changeSelection(item)">
                 <span ng-if="!item.selected"><i class="far fa-square"></i></span>
                 <span ng-if="item.selected"><i class="far fa-check-square"></i></span>
                 <div class="logo">

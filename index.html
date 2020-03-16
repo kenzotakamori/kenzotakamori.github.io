@@ -5,7 +5,6 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="js/my-account.js"></script>
     <script type="text/javascript" src="modal/modal-add-scholarship.js"></script>
-    <script type="text/javascript" src="modal/modal-exclude-scholarship.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,7 +58,8 @@
                         </p>
                         <div class="card-footer">
                             <div class="exclude" ng-click="exclude(s)">Excluir</div>
-                            <div class="see-offer" ng-click="seeOffer(s)">Ver Oferta</div>
+                            <div class="see-offer" ng-click="" ng-if="item.enabled">Ver Oferta</div>
+                            <div class="unavailable" ng-click="" ng-if="!item.enabled">Indisponível</div>
                         </div>
                     </li>
                 </ul>

@@ -13,6 +13,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.cityOptions = [];
     $scope.courseOptions = [];
     $scope.enableAddButton = false;
+    $scope.reverse = false;
     
     // Get City and Course options
     function getOptions() {
@@ -70,6 +71,10 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.changeSelection = function(item) {
         item.selected = !item.selected;
         checkSelection();
+    }
+
+    $scope.changeSort = function() {
+        $scope.reverse = !$scope.reverse;
     }
 
     // Button to save selected scholarships

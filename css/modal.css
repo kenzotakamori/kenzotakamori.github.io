@@ -43,6 +43,25 @@
     padding-left: 5px;
 }
 
+.sort {
+    width: 100%;
+    font-weight: 700;
+}
+
+.sort p {
+    width: 100%;
+    font-weight: 700;
+}
+
+.sort p span {
+    text-align: right;
+}
+
+.sort div {
+    color: #007A8D;
+    text-align: right;
+}
+
 li.scholarship-line {
     display: inline-flex;
     flex-direction: row;
