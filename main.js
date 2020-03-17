@@ -36,3 +36,13 @@ app.directive("starRating", function() {
       },
     };
 });
+app.filter('myCurrency', ['$filter', function($filter){
+  return function(input, symbol, fractionSize){
+      input = $filter('currency')(input, symbol, fractionSize);
+      if(symbol === 'R$'){
+        var tempString = "###";
+        input = input.replace(",", tempString).replace(".", ",").replace(tempString, ".");
+      }
+      return input;
+  }
+}])

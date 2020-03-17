@@ -28,7 +28,7 @@
         </div>
         <div class="filter-cost">
             <p>ATÉ QUANTO PODE PAGAR?</p>
-            <span>R$ {{filters.cost | number:0}}</span>
+            <span>{{filters.cost | myCurrency : 'R$' :0}}</span>
             <div class="slider-container">
                 <input 
                     type="range" 
@@ -59,7 +59,7 @@
                     <p>{{item.course.name}}</p>
                     <span>{{item.course.level}}</span>
                     <br><br>Bolsa de <strong>{{item.discount_percentage}}%<br>
-                    R$ {{item.price_with_discount}}/mês</strong>
+                    {{item.price_with_discount | myCurrency : 'R$' : 0}}/mês</strong>
                 </div>
             </li>
         </ul>
