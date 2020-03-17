@@ -46,3 +46,10 @@ app.filter('myCurrency', ['$filter', function($filter){
       return input;
   }
 }])
+app.filter('translateWords', function(){
+  return function(input){
+    if (input === 'EaD') {
+      return 'Educação à Distância';
+    }
+  }
+})

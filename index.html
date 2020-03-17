@@ -55,7 +55,7 @@
                         <p class="university-name">{{s.university.name}}</p>
                         <p class="course-name">{{s.course.name}}</p>
                         <star-rating rate="{{s.university.score}}"></star-rating>
-                        <p class="kind-shift">{{s.course.kind}} · {{s.course.shift}}</p>
+                        <p class="kind-shift">{{s.course.kind | translateWords}} · {{s.course.shift}}</p>
                         <p class="start-date">Início das aulas em: <span>{{s.start_date}}</span></p>
                         <div ng-show="s.enabled">
                             <b>Mensalidade com o Quero Bolsa:</b>
