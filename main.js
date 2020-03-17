@@ -49,7 +49,9 @@ app.filter('myCurrency', ['$filter', function($filter){
 app.filter('translateWords', function(){
   return function(input){
     if (input === 'EaD') {
-      return 'Educação à Distância';
+      return 'Ensino à Distância';
+    } else {
+      return input;
     }
   }
 })
