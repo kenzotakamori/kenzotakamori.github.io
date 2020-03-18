@@ -100,25 +100,54 @@ header li.menu i {
     .whatsapp-header {
         display: inline-flex;
         position: relative;
-        margin-bottom: 2px;
-        padding-left: 45px;
+        padding-left: 20px;
+        width: 20%
     }
 
     .whatsapp-header p {
         text-align: left;
-        padding-left: 15px;
+        padding-left: 10px;
         padding-top: 15px;
         margin: 0;
         font-weight: 700;
         font-size: 11px;
     }
 
-    .whatsapp p span {
+    .whatsapp-header p span {
         font-size: 12px;
     }
 
     .whatsapp-header .fa-whatsapp {
         color: #0FA866;
     }
+
+    header .fas, header .fab {
+        line-height: 60px;
+    }
     
+    header .account, header .help {
+        width: 20%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header .account span, header .help span {
+        line-height: 60px;
+        padding-left: 10px;
+    }
+
+    header .quero-logo {
+        width: 40%;
+    }
+
+    header .quero-logo img {
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        max-height: 50px;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
 }
