@@ -1,6 +1,13 @@
-.hide_for_mobile {
+.hide-for-mobile {
     display: none;
     @media (min-width: 48rem) {
         display: block;
+    }
+}
+
+.hide-for-desktop {
+    display: block;
+    @media (min-width: 48rem) {
+        display: none;
     }
 }
