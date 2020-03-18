@@ -75,3 +75,11 @@ footer .fa, footer .fab, footer .far, footer .fas {
 footer .fa.fa-heart {
     font-size: inherit;
 }
+
+@media (min-width: 48rem) {
+    .footer-row {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+}
