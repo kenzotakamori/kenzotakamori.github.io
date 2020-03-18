@@ -67,10 +67,6 @@
     margin-bottom: 0px;
 }
 
-.filter-city, .filter-course {
-    background: url(images/angle-down-solid.svg) no-repeat right grey;
-}
-
 .filter-city select, .filter-course select {
     width: 100%;
     height: 40px;
@@ -78,6 +74,8 @@
     -webkit-appearance: none;
     border-radius: 5px;
     border-color: #d3d3d3;
+    background: url(images/angle-down-solid.svg) no-repeat 97%;
+    background-size: 12px;
 }
 
 .filter-mode .options {

@@ -1,5 +1,5 @@
 <div id="add-scholarship">
-    <div class="close-modal">
+    <div class="close-modal" ng-click="cancel()">
         <span>
             <i class="fas fa-times"></i>
         </span>
@@ -69,5 +69,5 @@
         <div class="add-button add-disabled" ng-if="!enableAddButton">Adicionar bolsa(s)</div>
         <div class="add-button add-enabled" ng-if="enableAddButton" ng-click="ok()">Adicionar bolsa(s)</div>
     </div>
-    <div class="modal-below-footer"></div>
+    <div class="modal-below-footer" ng-click="cancel()"></div>
 </div>
