@@ -228,3 +228,39 @@ li.selected-scholarships .unavailable-scholarship span {
 .star-rating div {
     padding-left: 5px;
 }
+
+@media (min-width: 48rem) {
+    .quero-my-account {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    main .breadcrumbs {
+        color: #1F2D30;
+        color: #007A8D;
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    table.semester-filter {
+        line-height: 30px;
+        max-width: 600px;
+
+    }
+
+    main .card-to-add, li.selected-scholarships {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 290px;
+        height: 380px;
+        margin-top: 15px;
+        box-shadow: 0px 2px 5px #80808045;
+        background: #fff;
+    }
+
+    main .card-to-add {
+        padding-top: 100px;
+    }
+}

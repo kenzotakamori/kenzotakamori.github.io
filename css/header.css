@@ -101,6 +101,10 @@ header li.menu i {
         max-width: 1200px;
         margin: auto
     }
+
+    header li {
+        padding: 10px 25px; 
+    }
     
     .whatsapp-header {
         display: inline-flex;
