@@ -15,6 +15,10 @@ footer .footer-row {
     text-align: center;
 }
 
+footer .footer-row .whatsapp-desktop {
+    display: none;
+}
+
 footer .whatsapp {
     background-color: #007A8D;
     width: 100%;
@@ -77,9 +81,38 @@ footer .fa.fa-heart {
 }
 
 @media (min-width: 48rem) {
-    .footer-row {
+    .footer-row-desktop {
         max-width: 1200px;
         margin: auto;
     }
+
+    .footer-background {
+        width: 100%;
+        background-color: #007A8D;
+    }
+
+    footer .whatsapp {
+        background-color: #007A8D;
+        width: 100%;
+        display: inline-flex;
+        position: relative;
+        margin-bottom: 2px;
+        padding-left: 45px;
+    }
     
+    footer i.fab.fa-whatsapp {
+        line-height: 70px;
+    }
+    
+    footer .whatsapp p {
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 15px;
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    footer .whatsapp p span, .chat span, .email span, footer .help span {
+        font-weight: 700;
+    }
 }
