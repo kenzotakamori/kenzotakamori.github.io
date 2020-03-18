@@ -97,11 +97,16 @@ header li.menu i {
 }
 
 @media (min-width: 48rem) {
+    header .header, header ul {
+        max-width: 1200px;
+        margin: auto
+    }
+    
     .whatsapp-header {
         display: inline-flex;
         position: relative;
         padding-left: 20px;
-        width: 20%
+        width: 22%;
     }
 
     .whatsapp-header p {
@@ -126,7 +131,7 @@ header li.menu i {
     }
     
     header .account, header .help {
-        width: 20%;
+        width: 18%;
         display: inline-flex;
         flex-direction: row;
         padding-bottom: 0;
