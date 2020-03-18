@@ -7,7 +7,7 @@ header .header {
     font-size: 12px;
 }
 
-header .fas {
+header .fas, header .fab {
     font-size: 22px;
     font-weight: 100;
 }
@@ -94,4 +94,31 @@ header li.menu a {
 
 header li.menu i {
     font-weight: 500px;
+}
+
+@media (min-width: 48rem) {
+    .whatsapp-header {
+        display: inline-flex;
+        position: relative;
+        margin-bottom: 2px;
+        padding-left: 45px;
+    }
+
+    .whatsapp-header p {
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 15px;
+        margin: 0;
+        font-weight: 700;
+        font-size: 11px;
+    }
+
+    .whatsapp p span {
+        font-size: 12px;
+    }
+
+    .whatsapp-header .fa-whatsapp {
+        color: #0FA866;
+    }
+    
 }

@@ -3,12 +3,12 @@
 }
 
 .hide-for-desktop {
-    display: inherit;
+    display: block;
 }
 
 @media (min-width: 48rem) {
     .hide-for-mobile {
-        display: inherit;
+        display: block;
     }
     
     .hide-for-desktop {
