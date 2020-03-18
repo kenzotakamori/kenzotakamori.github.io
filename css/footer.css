@@ -93,7 +93,7 @@ footer .fa.fa-heart {
 
     footer .whatsapp-desktop, .chat, .email, footer .help {
         width: 25%;
-        display: inline-flex;
+        display: inline-flex !important;
         position: relative;
         justify-content: center;
         padding-top: 0;
@@ -111,7 +111,11 @@ footer .fa.fa-heart {
         font-weight: 300;
     }
 
-    footer i.fab.fa-whatsapp {
+    footer .whatsapp-desktop span {
+        font-weight: 700;
+    }
+
+    footer i.fab.fa-whatsapp, footer i.far.fa-comments,  footer i.far.fa-envelope, footer i.fas.fa-info-circle{
         line-height: 70px;
     }
 }
