@@ -1,13 +1,17 @@
 .hide-for-mobile {
     display: none;
-    @media (min-width: 48rem) {
-        display: block;
-    }
 }
 
 .hide-for-desktop {
-    display: block;
-    @media (min-width: 48rem) {
+    display: inherit;
+}
+
+@media (min-width: 48rem) {
+    .hide-for-mobile {
+        display: inherit;
+    }
+    
+    .hide-for-desktop {
         display: none;
     }
 }
