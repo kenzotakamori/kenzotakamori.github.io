@@ -1,5 +1,5 @@
 .hide-for-mobile {
-    display: none;
+    display: none !important;
 }
 
 .hide-for-desktop {
@@ -12,6 +12,6 @@
     }
     
     .hide-for-desktop {
-        display: none;
+        display: none !important;
     }
 }
