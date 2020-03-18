@@ -1,9 +1,39 @@
+.modal-content {
+    background-color: transparent;
+} 
+
+.modal-body, .modal-footer {
+    background-color: #fff;
+}
+
+.close-modal {
+    height: 50px;
+}
+
+.close-modal span {
+    line-height: 50px;
+    display: block;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.close-modal span i {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.modal-below-footer {
+    height: 100px;
+}
+
 .modal-dialog {
     margin: 0;
 }
 
 .modal-backdrop {
-    opacity: 88%;
+    opacity: 88% !important;
     background-color: #1F2D30;
 }
 
@@ -17,13 +47,13 @@
 }
 
 .modal-body {
-    padding-top: 0;
+    padding-top: 5px;
 }
 
 .modal-body h1 {
     font-weight: 600;
-    font-size: 28px;
-    margin-top: 10px;
+    font-size: 22px;
+    margin-top: 15px;
 }
 
 .modal-body ul {
@@ -149,7 +179,6 @@ li.scholarship-line .scholarship-info strong {
 
 .modal-footer {
     border: none;
-    padding-top: 0px;
     display: inline-flex;
     flex-direction: row;
     width: 100%;
