@@ -129,23 +129,40 @@ header li.menu i {
         width: 20%;
         display: inline-flex;
         flex-direction: row;
-        justify-content: center;
         padding-bottom: 0;
         padding-top: 0;
     }
 
+    header .account {
+        justify-content: right;
+        flex-direction: row-reverse;
+        padding-right: 15px;
+    }
+
     header .account span, header .help span {
+        line-height: 60px;
+        padding-right: 10px;
+    }
+
+    header .help {
+        justify-content: left;
+        padding-left: 15px;
+    }
+
+    header .help span {
         line-height: 60px;
         padding-left: 10px;
     }
 
     header .quero-logo {
         width: 40%;
+        padding-top: 0;
     }
 
     header .quero-logo img {
         width: 50%;
         margin: 0;
+        padding-top: 0;
         position: absolute;
         max-height: 50px;
         transform: translate(-50%,-50%);
