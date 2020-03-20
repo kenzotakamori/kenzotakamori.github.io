@@ -296,6 +296,13 @@ li.scholarship-line .scholarship-info strong {
 
     li.scholarship-line .logo {
         width: 20%;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    li.scholarship-line .logo img {
+        max-width: 70%;
+        max-height: 100%;
     }
 
     li.scholarship-line .scholarship-info {
@@ -311,6 +318,7 @@ li.scholarship-line .scholarship-info strong {
     li.scholarship-line .scholarship-info .price {
         float: right;
         text-align: right;
+        margin-top: 0;
     }
 
     .modal-footer {
