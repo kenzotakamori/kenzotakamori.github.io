@@ -274,6 +274,10 @@ li.scholarship-line .scholarship-info strong {
         width: 100%;
     }
 
+    .modal table td {
+        width: 50%;
+    }
+
     .modal table td.filter-city, .modal table td.filter-mode {
         padding-right: 5px;
     }
