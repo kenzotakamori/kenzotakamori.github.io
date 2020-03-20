@@ -121,7 +121,6 @@ li.scholarship-line {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-    height: 164px;
 }
 
 li.scholarship-line:first-child {
@@ -147,18 +146,18 @@ li.scholarship-line span i{
 }
 
 li.scholarship-line .logo {
-    width: 50%;
+    width: 45%;
     display: inline-block;
     line-height: 120px;
 }
 
 li.scholarship-line .logo img {
     max-width: 70%;
-    max-height: 70%;
+    max-height: 50%;
 }
 
 li.scholarship-line .scholarship-info {
-    width: 45%;
+    width: 50%;
     text-align: left;
 }
 
@@ -171,6 +170,10 @@ li.scholarship-line .scholarship-info p {
 
 li.scholarship-line .scholarship-info span {
     font-size: 12px;
+}
+
+li.scholarship-line .scholarship-info .price {
+    margin-top: 20px;
 }
 
 li.scholarship-line .scholarship-info strong {
@@ -287,6 +290,29 @@ li.scholarship-line .scholarship-info strong {
         padding-top: 10px;
     }
 
+    .sort div {
+        display: inline-block;
+    }
+
+    li.scholarship-line .logo {
+        width: 20%;
+    }
+
+    li.scholarship-line .scholarship-info {
+        display: inline-block;
+        width: 75%;
+    }
+
+    li.scholarship-line .scholarship-info .course {
+        float: left;
+        padding-left: 10px;
+    }
+
+    li.scholarship-line .scholarship-info .price {
+        float: right;
+        text-align: right;
+    }
+
     .modal-footer {
         justify-content: flex-end;
     }
@@ -297,9 +323,5 @@ li.scholarship-line .scholarship-info strong {
 
     .modal-footer .add-button {
         width: 200px;
-    }
-
-    .sort div {
-        display: inline-block;
     }
 }
