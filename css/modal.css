@@ -92,23 +92,25 @@
 .sort {
     width: 100%;
     font-weight: 700;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .sort p {
-    width: 100%;
+    width: 20%;
     font-weight: 700;
-    margin: 20px 0 0;
-}
-
-.sort p span {
-    float: right;
 }
 
 .sort div {
+    width: 80%;
     color: #007A8D;
     text-align: right;
-    padding-bottom: 20px;
-    padding-top: 5px;
+    display: inline-grid;
+}
+
+.sort div b {
+    color: #1F2D30;
 }
 
 li.scholarship-line {
@@ -255,13 +257,33 @@ li.scholarship-line .scholarship-info strong {
 }
 
 @media (min-width: 48rem) {
-    .modal {
+    .modal-dialog {
         width: 700px;
         position: absolute;
         left: 50%;
         top: 15%;
         margin: 0;
         transform: translateX(-50%);
+    }
+
+    .modal table {
+        display: table !important;
+    }
+
+    .modal table td.filter-city, .modal table td.filter-mode {
+        padding-right: 5px;
+    }
+
+    .modal table td.filter-course, .modal table td.filter-cost {
+        padding-left: 5px;
+    }
+
+    .modal table td p {
+        margin-top: 0;
+    }
+
+    .modal table tr:nth-child(2) td{
+        padding-top: 10px;
     }
 
     .modal-footer {
@@ -274,5 +296,9 @@ li.scholarship-line .scholarship-info strong {
 
     .modal-footer .add-button {
         width: 200px;
+    }
+
+    .sort div {
+        display: inline-block;
     }
 }
