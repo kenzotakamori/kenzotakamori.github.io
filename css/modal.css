@@ -263,11 +263,12 @@ li.scholarship-line .scholarship-info strong {
         left: 50%;
         top: 15%;
         margin: 0;
-        transform: translateX(-50%);
+        transform: translateX(-50%) !important;
     }
 
     .modal table {
         display: table !important;
+        width: 100%;
     }
 
     .modal table td.filter-city, .modal table td.filter-mode {
