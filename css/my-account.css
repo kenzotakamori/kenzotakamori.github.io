@@ -248,9 +248,15 @@ li.selected-scholarships .unavailable-scholarship span {
     }
 
     main table.semester-filter {
+        float: right;
         line-height: 30px;
-        max-width: 600px;
+        width: 600px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 
+    main table.semester-filter td:nth-child(2) {
+        border: 1px solid #007A8D;
     }
 
     main .cards {

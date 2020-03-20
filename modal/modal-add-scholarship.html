@@ -7,39 +7,82 @@
     <div class="modal-body">
         <h1>Adicionar bolsa</h1>
         <p>Filtre e adicione as bolsas de seu interesse.</p>
-        <div class="filter-city">
-            <p>SELECIONE SUA CIDADE</p>
-            <select ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
-        </div>
-        <div class="filter-course">
-            <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
-            <select ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
-        </div>
-        <div class="filter-mode">
-            <p>COMO VOCÊ QUER ESTUDAR?</p>
-            <div class="options">
-                <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
-                <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
-                <span class="text">Presencial</span>
-                <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-square"></i></span>
-                <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-check-square"></i></span>
-                <span class="text">À distância</span>
-            </div>            
-        </div>
-        <div class="filter-cost">
-            <p>ATÉ QUANTO PODE PAGAR?</p>
-            <span>{{filters.cost | myCurrency : 'R$' :0}}</span>
-            <div class="slider-container">
-                <input 
-                    type="range" 
-                    min="0" 
-                    max="2000" 
-                    value="2000" 
-                    class="slider" 
-                    ng-model="filters.cost"
-                    ng-model-options='{ debounce: 500 }'>
+        <div class="hide-for-desktop">
+            <div class="filter-city">
+                <p>SELECIONE SUA CIDADE</p>
+                <select ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
+            </div>
+            <div class="filter-course">
+                <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
+                <select ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
+            </div>
+            <div class="filter-mode">
+                <p>COMO VOCÊ QUER ESTUDAR?</p>
+                <div class="options">
+                    <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
+                    <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
+                    <span class="text">Presencial</span>
+                    <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-square"></i></span>
+                    <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-check-square"></i></span>
+                    <span class="text">À distância</span>
+                </div>            
+            </div>
+            <div class="filter-cost">
+                <p>ATÉ QUANTO PODE PAGAR?</p>
+                <span>{{filters.cost | myCurrency : 'R$' :0}}</span>
+                <div class="slider-container">
+                    <input 
+                        type="range" 
+                        min="0" 
+                        max="2000" 
+                        value="2000" 
+                        class="slider" 
+                        ng-model="filters.cost"
+                        ng-model-options='{ debounce: 500 }'>
+                </div>
             </div>
         </div>
+        <table class="hide-for-mobile">
+            <body>
+                <tr>
+                    <td class="filter-city">
+                        <p>SELECIONE SUA CIDADE</p>
+                        <select ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
+                    </td>
+                    <td class="filter-course">
+                        <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
+                        <select ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filter-mode">
+                        <p>COMO VOCÊ QUER ESTUDAR?</p>
+                        <div class="options">
+                            <span ng-if="!filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-square"></i></span>
+                            <span ng-if="filters.mode.presential" ng-click="changeModeFilter('presential')"><i class="far fa-check-square"></i></span>
+                            <span class="text">Presencial</span>
+                            <span ng-if="!filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-square"></i></span>
+                            <span ng-if="filters.mode.distance" ng-click="changeModeFilter('distance')"><i class="far fa-check-square"></i></span>
+                            <span class="text">À distância</span>
+                        </div>            
+                    </td>
+                    <td class="filter-cost">
+                        <p>ATÉ QUANTO PODE PAGAR?</p>
+                        <span>{{filters.cost | myCurrency : 'R$' :0}}</span>
+                        <div class="slider-container">
+                            <input 
+                                type="range" 
+                                min="0" 
+                                max="2000" 
+                                value="2000" 
+                                class="slider" 
+                                ng-model="filters.cost"
+                                ng-model-options='{ debounce: 500 }'>
+                        </div>
+                    </td>
+                </tr>
+            </body>
+        </table>
         <div class="sort">
             <p>Resultado: <span>Ordenar por</span></p>
             <div ng-click="changeSort()">

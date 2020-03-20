@@ -228,13 +228,13 @@ li.scholarship-line .scholarship-info strong {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
-  
-  .slider:hover {
+}
+
+.slider:hover {
     opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
+}
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
@@ -243,13 +243,36 @@ li.scholarship-line .scholarship-info strong {
     border: 1px solid #18ACC4;
     background: #FBFBFB;
     cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+.slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     border: 1px solid #18ACC4;
     background: #FBFBFB;
     cursor: pointer;
-  }
+}
+
+@media (min-width: 48rem) {
+    .modal {
+        width: 700px;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+
+    .modal-footer {
+        justify-content: flex-end;
+    }
+
+    .modal-footer .cancel-button {
+        width: 150px;
+    }
+
+    .modal-footer .add-button {
+        width: 200px;
+    }
+}
