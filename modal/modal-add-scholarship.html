@@ -102,10 +102,14 @@
                     <img src="{{item.university.logo_url}}">
                 </div>
                 <div class="scholarship-info">
-                    <p>{{item.course.name}}</p>
-                    <span>{{item.course.level}}</span>
-                    <br><br>Bolsa de <strong>{{item.discount_percentage}}%<br>
-                    {{item.price_with_discount | myCurrency : 'R$' : 0}}/mês</strong>
+                    <div>
+                        <p>{{item.course.name}}</p>
+                        <span>{{item.course.level}}</span>
+                    </div>
+                    <div>
+                        Bolsa de <strong>{{item.discount_percentage}}%<br>
+                            {{item.price_with_discount | myCurrency : 'R$' : 0}}/mês</strong>
+                    </div>
                 </div>
             </li>
         </ul>
