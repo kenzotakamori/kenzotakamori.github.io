@@ -237,10 +237,13 @@ li.selected-scholarships .unavailable-scholarship span {
 
     main .breadcrumbs {
         color: #1F2D30;
-        color: #007A8D;
         font-weight: 700;
         font-size: 12px;
         margin-top: 20px;
+    }
+
+    main .breadcrumbs a {
+        color: #007A8D;
     }
     
     .semester-filter.hide-for-desktop {
@@ -283,5 +286,21 @@ li.selected-scholarships .unavailable-scholarship span {
 
     main .card-to-add {
         padding-top: 100px;
+    }
+
+    li.selected-scholarships .my-account-logo {
+        margin-bottom: 15px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    li.selected-scholarships .my-account-logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .card-footer .exclude, .card-footer .see-offer, .card-footer .unavailable {
+        height: 35px;
+        line-height: 35px;
     }
 }
