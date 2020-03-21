@@ -235,6 +235,12 @@ li.selected-scholarships .unavailable-scholarship span {
         margin: auto;
     }
 
+    main h1 {
+        font-weight: 700;
+        font-size: 38px;
+        margin-top: 45px;
+    }
+
     main .breadcrumbs {
         color: #1F2D30;
         font-weight: 700;
@@ -296,6 +302,7 @@ li.selected-scholarships .unavailable-scholarship span {
 
     li.selected-scholarships .my-account-logo img {
         max-width: 100%;
+        width: auto;
         max-height: 100%;
     }
     
