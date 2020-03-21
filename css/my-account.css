@@ -172,6 +172,18 @@ li.selected-scholarships .unavailable-scholarship span {
     font-size: 11px;
 }
 
+li.selected-scholarships {
+    opacity: 1;
+}
+li.selected-scholarships.ng-enter {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+}
+li.selected-scholarships.ng-enter-active {
+    opacity: 1;
+}
+
 
 .card-footer {
     display: inline-flex;

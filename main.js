@@ -1,4 +1,4 @@
-var app = angular.module("main", ['ui.bootstrap']);
+var app = angular.module("main", ['ui.bootstrap', 'ngAnimate']);
 app.directive("headerQuero", function() {
     return {
       templateUrl: "directives/header-quero.html"
