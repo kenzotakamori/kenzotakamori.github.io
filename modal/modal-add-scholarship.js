@@ -1,6 +1,6 @@
 app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.items = items;
-    $scope.itemsShown = $scope.items
+    $scope.itemsShown = JSON.parse(JSON.stringify($scope.items));
     $scope.filters = {
         city: null,
         course: null,
@@ -79,6 +79,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
 
     // Button to save selected scholarships
     $scope.ok = function() {
+        $scope.items = JSON.parse(JSON.stringify($scope.itemsShown));
         $modalInstance.close($scope.items);
     }
 

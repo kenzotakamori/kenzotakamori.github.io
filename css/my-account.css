@@ -175,13 +175,13 @@ li.selected-scholarships .unavailable-scholarship span {
 li.selected-scholarships {
     opacity: 1;
 }
-li.selected-scholarships.ng-enter {
+li.selected-scholarships.ng-leave {
     -webkit-transition: 0.5s;
-    transition: 0.5s;
-    opacity: 0;
-}
-li.selected-scholarships.ng-enter-active {
+    transition: opacity 0.5s ease-in-out;
     opacity: 1;
+}
+li.selected-scholarships.ng-leave-active {
+    opacity: 0;
 }
 
 
