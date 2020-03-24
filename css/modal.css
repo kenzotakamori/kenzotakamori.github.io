@@ -300,7 +300,7 @@ li.scholarship-line.ng-enter.ng-enter-active {
         width: 700px;
         position: absolute;
         left: 50%;
-        top: 10%;
+        top: 5%;
         margin: 0;
         transform: translateX(-50%) !important;
     }
