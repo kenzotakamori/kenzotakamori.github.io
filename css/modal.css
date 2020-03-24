@@ -300,7 +300,7 @@ li.scholarship-line.ng-enter.ng-enter-active {
         width: 700px;
         position: absolute;
         left: 50%;
-        top: 15%;
+        top: 10%;
         margin: 0;
         transform: translateX(-50%) !important;
     }
@@ -332,6 +332,11 @@ li.scholarship-line.ng-enter.ng-enter-active {
 
     .sort div {
         display: inline-block;
+    }
+
+    .modal ul {
+        overflow-y: auto;
+        height: 300px;
     }
 
     li.scholarship-line .logo {
@@ -371,5 +376,9 @@ li.scholarship-line.ng-enter.ng-enter-active {
 
     .modal-footer .add-button {
         width: 200px;
+    }
+
+    .modal-below-footer {
+        display: none;
     }
 }
