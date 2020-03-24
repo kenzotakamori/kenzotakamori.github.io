@@ -180,6 +180,27 @@ li.scholarship-line .scholarship-info strong {
     color: #0FA866;
 }
 
+li.scholarship-line.ng-move,
+li.scholarship-line.ng-enter,
+li.scholarship-line.ng-leave {
+  transition: all linear 0.5s;
+}
+
+li.scholarship-line.ng-leave.ng-leave-active,
+li.scholarship-line.ng-move,
+li.scholarship-line.ng-enter {
+  opacity:0;
+  max-height: 0;
+}
+
+li.scholarship-line.ng-leave,
+li.scholarship-line.ng-move.ng-move-active,
+li.scholarship-line.ng-enter.ng-enter-active {
+  opacity: 1;
+  max-height: 100%;
+}
+
+
 .modal-footer {
     border: none;
     display: inline-flex;
@@ -266,12 +287,12 @@ li.scholarship-line .scholarship-info strong {
 
 .far.fa-check-square.ng-enter,
 .far.fa-check-square.ng-leave.ng-leave-active {
-  opacity: 0;
+    opacity: 0;
 }
 
 .far.fa-check-square.ng-leave,
 .far.fa-check-square.ng-enter.ng-enter-active {
-  opacity: 1;
+    opacity: 1;
 }
 
 @media (min-width: 48rem) {
