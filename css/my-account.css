@@ -177,12 +177,9 @@ li.selected-scholarships {
 }
 
 li.selected-scholarships.ng-move,
-li.selected-scholarships.ng-enter {
-    transition: all 0.3s linear 0.1s;
-}
-
+li.selected-scholarships.ng-enter,
 li.selected-scholarships.ng-leave {
-    transition: all 0s ease-in 0s;
+    transition: all 0.3s linear 0.1s;
 }
 
 li.selected-scholarships.ng-leave.ng-leave-active,
