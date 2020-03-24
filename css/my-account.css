@@ -177,23 +177,29 @@ li.selected-scholarships {
 }
 
 li.selected-scholarships.ng-move,
-li.selected-scholarships.ng-enter,
+li.selected-scholarships.ng-enter {
+    transition: all 0.3s linear 0.1s;
+}
+
 li.selected-scholarships.ng-leave {
-  transition: all linear 0.5s;
+    transition: all 0s ease-in 0s;
 }
 
 li.selected-scholarships.ng-leave.ng-leave-active,
 li.selected-scholarships.ng-move,
 li.selected-scholarships.ng-enter {
-  opacity:0;
-  max-width: 0;
+    opacity:0;
 }
 
 li.selected-scholarships.ng-leave,
 li.selected-scholarships.ng-move.ng-move-active,
 li.selected-scholarships.ng-enter.ng-enter-active {
-  opacity: 1;
-  max-width: 100%;
+    opacity: 1;
+}
+
+li.selected-scholarships.ng-enter-stagger {
+    transition-delay: 0.01s;
+    transition-duration: 0s;
 }
 
 .card-footer {
