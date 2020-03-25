@@ -1,3 +1,8 @@
+.modal {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
 .modal-content {
     background-color: transparent;
 } 
@@ -22,10 +27,6 @@
 .close-modal span i {
     font-weight: 300;
     font-size: 24px;
-}
-
-.modal-below-footer {
-    height: 100px;
 }
 
 .modal-dialog {
@@ -398,9 +399,5 @@ li.scholarship-line.ng-enter.ng-enter-active {
 
     .modal-footer .add-button:hover, .modal-footer .cancel-button:hover {
         transform: scale(1.1);
-    }
-
-    .modal-below-footer {
-        display: none;
     }
 }
