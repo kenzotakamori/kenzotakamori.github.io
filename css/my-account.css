@@ -298,6 +298,14 @@ li.selected-scholarships.ng-enter-stagger {
         border: 1px solid #007A8D;
     }
 
+    main table.semester-filter td.unselected {
+        transition: transform 0.2s;
+    }
+
+    main table.semester-filter td.unselected:hover {
+        transform: scale(1.05)
+    }
+
     main ul {
         display: grid;
         width: 100%;
@@ -330,7 +338,7 @@ li.selected-scholarships.ng-enter-stagger {
     }
 
     main .card-to-add:hover i {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
     li.selected-scholarships .my-account-logo {
@@ -348,5 +356,13 @@ li.selected-scholarships.ng-enter-stagger {
     .card-footer .exclude, .card-footer .see-offer, .card-footer .unavailable {
         height: 35px;
         line-height: 35px;
+    }
+
+    .card-footer .exclude, .card-footer .see-offer {
+        transition: all 0.2s;
+    }
+
+    .card-footer .exclude:hover, .card-footer .see-offer:hover {
+        transform: scale(1.1);
     }
 }

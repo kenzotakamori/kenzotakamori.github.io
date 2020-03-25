@@ -378,6 +378,14 @@ li.scholarship-line.ng-enter.ng-enter-active {
         width: 200px;
     }
 
+    .modal-footer .add-button {
+        transition: all 0.2s;
+    }
+
+    .modal-footer .add-button:hover, .modal-footer .cancel-button:hover {
+        transform: scale(1.1);
+    }
+
     .modal-below-footer {
         display: none;
     }
