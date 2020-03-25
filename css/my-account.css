@@ -298,14 +298,6 @@ li.selected-scholarships.ng-enter-stagger {
         border: 1px solid #007A8D;
     }
 
-    main table.semester-filter td.unselected {
-        transition: transform 0.2s;
-    }
-
-    main table.semester-filter td.unselected:hover {
-        transform: scale(1.05)
-    }
-
     main ul {
         display: grid;
         width: 100%;
