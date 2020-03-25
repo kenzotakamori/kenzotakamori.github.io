@@ -305,9 +305,18 @@ li.scholarship-line.ng-enter.ng-enter-active {
         transform: translateX(-50%) !important;
     }
 
+    .modal-body {
+        padding-right: 0;
+    }
+
+    .modal-body .header-text {
+        padding-right: 15px;
+    }
+
     .modal table {
         display: table !important;
         width: 100%;
+        padding-right: 15px;
     }
 
     .modal table td {
@@ -332,11 +341,13 @@ li.scholarship-line.ng-enter.ng-enter-active {
 
     .sort div {
         display: inline-block;
+        padding-right: 15px;
     }
 
     .modal ul {
         overflow-y: auto;
         height: 300px;
+        padding-right: 15px;
     }
 
     li.scholarship-line .logo {
