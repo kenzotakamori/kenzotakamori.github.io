@@ -68,10 +68,6 @@ header li {
     padding: 10px 12px; 
 }
 
-header li:hover {
-    background-color: #007A8D;
-}
-
 header li i {
     font-weight: 1000;
     color: white;
@@ -173,9 +169,13 @@ header li.menu i {
         margin: 0;
         padding-top: 0;
         position: absolute;
-        max-height: 50px;
+        max-height: 40px;
         transform: translate(-50%,-50%);
         top: 50%;
         left: 50%;
+    }
+
+    header nav ul .selected {
+        background-color: #007A8D;
     }
 }
