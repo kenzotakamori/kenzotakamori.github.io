@@ -2,8 +2,8 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
     $scope.items = JSON.parse(JSON.stringify(items));
     $scope.itemsShown = $scope.items;
     $scope.filters = {
-        city: null,
-        course: null,
+        city: "",
+        course: "",
         mode: {
             presential: true,
             distance: true
