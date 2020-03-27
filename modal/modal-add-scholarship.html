@@ -50,11 +50,11 @@
                     <tr>
                         <td class="filter-city">
                             <p>SELECIONE SUA CIDADE</p>
-                            <select ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
+                            <select ng-init="filter.city = cityOptions[0]" ng-model="filters.city" ng-options="city as city for city in cityOptions"></select>
                         </td>
                         <td class="filter-course">
                             <p>SELECIONE O CURSO DE SUA PREFERÊNCIA</p>
-                            <select ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
+                            <select ng-init="filter.course = courseOptions[0]" ng-model="filters.course" ng-options="course as course for course in courseOptions"></select>
                         </td>
                     </tr>
                     <tr>
