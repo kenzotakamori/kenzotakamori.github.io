@@ -219,6 +219,15 @@ li.scholarship-line.ng-enter.ng-enter-active {
   max-height: 100%;
 }
 
+.modal-body .no-items {
+    border-top: 2px solid #80808045;
+    border-bottom: 2px solid #80808045;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 70%;
+}
+
 
 .modal-footer {
     border: none;

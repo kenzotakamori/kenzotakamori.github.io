@@ -98,7 +98,7 @@
                 </span>
             </div>            
         </div>
-        <ul>
+        <ul ng-if="itemsShown.length > 0">
             <li class="scholarship-line" ng-repeat="item in itemsShown | orderBy: 'university.name' : reverse" ng-click="changeSelection(item)">
                 <span ng-if="!item.selected"><i class="far fa-square"></i></span>
                 <span ng-if="item.selected"><i class="far fa-check-square"></i></span>
@@ -111,12 +111,17 @@
                         <span>{{item.course.level}}</span>
                     </div>
                     <div class="price">
-                        Bolsa de <strong>{{item.discount_percentage}}%<br>
+                        Bolsa de <strong>{{item.discount_percentage | number : 0}}%<br>
                             {{item.price_with_discount | myCurrency : 'R$' : 0}}/mês</strong>
                     </div>
                 </div>
             </li>
         </ul>
+        <div class="no-items" ng-if="itemsShown.length === 0">
+            <span>
+                Não há bolsas disponíveis para os filtros selecionados.
+            </span>
+        </div>
     </div>
     <div class="modal-footer">
         <div class="cancel-button" ng-click="cancel()">Cancelar</div>

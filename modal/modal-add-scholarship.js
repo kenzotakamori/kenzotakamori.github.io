@@ -10,8 +10,8 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
         },
         cost: 2000,
     }
-    $scope.cityOptions = [];
-    $scope.courseOptions = [];
+    $scope.cityOptions = [""];
+    $scope.courseOptions = [""];
     $scope.enableAddButton = false;
     $scope.reverse = false;
 
@@ -42,7 +42,7 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
             || (!$scope.filters.mode.distance && item.course.kind === 'EaD'))
                 return false;
         
-        if ($scope.filters.cost)
+        if ($scope.filters.cost || $scope.filters.cost == 0)
             if ($scope.filters.cost < item.price_with_discount)
                 return false;
         
