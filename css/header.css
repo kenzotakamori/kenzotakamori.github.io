@@ -79,6 +79,11 @@ header li a {
     text-decoration: none;
 }
 
+header li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 header li.menu {
     position: absolute;
     right: 0;

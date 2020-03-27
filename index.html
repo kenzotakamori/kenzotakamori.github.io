@@ -2,9 +2,10 @@
 <html>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script type="text/javascript" src="common/ui-bootstrap-tpls-0.12.1.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="js/my-account.js"></script>
+    <script type="text/javascript" src="page/my-account.js"></script>
     <script type="text/javascript" src="modal/modal-add-scholarship.js"></script>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,78 +23,7 @@
         <header-quero></header-quero>
         <!-- Body -->
         <main>
-            <div ng-controller="myAccount" class="quero-my-account">
-                <div class="breadcrumbs">
-                    <div class="hide-for-desktop">
-                        <i class="fa fa-angle-left"></i>
-                        <span>Minha conta</span>
-                    </div>
-                    <div class="hide-for-mobile">
-                        <a>Home</a>  /  <a>Minha conta</a>  /  <span>Bolsas favoritas</span>
-                    </div>
-                </div>
-                <h1>Bolsas favoritas</h1>
-                <div>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</div>
-                <table class="semester-filter hide-for-desktop">
-                    <tr>
-                        <td class="selected" ng-show="semester=='all'">Todos os semestres</td>
-                        <td class="unselected" ng-show="semester!='all'" ng-click="filterSemester('all')">Todos os semestres</td>
-                    </tr>
-                    <tr>
-                        <td class="selected" ng-show="semester=='2019.2'">2º semestre de 2019</td>
-                        <td class="unselected" ng-show="semester!='2019.2'" ng-click="filterSemester('2019.2')">2º semestre de 2019</td>
-                    </tr>
-                    <tr>
-                        <td class="selected" ng-show="semester=='2020.1'">1º semestre de 2020</td>
-                        <td class="unselected" ng-show="semester!='2020.1'" ng-click="filterSemester('2020.1')">1º semestre de 2020</td>
-                    </tr>
-                </table>
-                <div class="hide-for-mobile">
-                    <table class="semester-filter">
-                        <tr>
-                            <td class="selected" ng-show="semester=='all'">Todos os semestres</td>
-                            <td class="unselected" ng-show="semester!='all'" ng-click="filterSemester('all')">Todos os semestres</td>
-                            <td class="selected" ng-show="semester=='2019.2'">2º semestre de 2019</td>
-                            <td class="unselected" ng-show="semester!='2019.2'" ng-click="filterSemester('2019.2')">2º semestre de 2019</td>
-                            <td class="selected" ng-show="semester=='2020.1'">1º semestre de 2020</td>
-                            <td class="unselected" ng-show="semester!='2020.1'" ng-click="filterSemester('2020.1')">1º semestre de 2020</td>
-                        </tr>
-                    </table>
-                </div>
-                <ul>
-                    <li class="card-to-add" ng-click="openModal()">
-                        <i class="fa fa-plus-circle"></i>
-                        <span>Adicionar bolsa</span>
-                        <p>Clique para adicionar bolsas de cursos do seu interesse</p>
-                    </li>
-                    <li class="selected-scholarships" ng-repeat="s in getSelectedScholarships()">
-                        <div class="my-account-logo">
-                            <img src="{{s.university.logo_url}}">
-                        </div>
-                        <p class="university-name">{{s.university.name}}</p>
-                        <p class="course-name">{{s.course.name}}</p>
-                        <star-rating rate="{{s.university.score}}"></star-rating>
-                        <p class="kind-shift">{{s.course.kind | translateWords}} · {{s.course.shift}}</p>
-                        <p class="start-date">Início das aulas em: <span>{{s.start_date}}</span></p>
-                        <div ng-show="s.enabled">
-                            <b>Mensalidade com o Quero Bolsa:</b>
-                            <p class="full-price">{{s.full_price | myCurrency : "R$" : 2}}</p>
-                            <p class="price-with-discount">
-                                <span>{{s.price_with_discount | myCurrency : "R$" : 2}}</span> /mês
-                            </p>
-                        </div>
-                        <div class="unavailable-scholarship" ng-show="!s.enabled">
-                            <p>Bolsa indisponível.</p>
-                            <span>Entre em contato com nosso atendimento pra saber mais.</span>
-                        </div>
-                        <div class="card-footer">
-                            <div class="exclude" ng-click="exclude(s)">Excluir</div>
-                            <div class="see-offer" ng-click="" ng-if="s.enabled">Ver Oferta</div>
-                            <div class="unavailable" ng-if="!s.enabled">Indisponível</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <div ng-view></div>
         </main>
         <!-- Footer -->
         <footer-quero></footer-quero>   

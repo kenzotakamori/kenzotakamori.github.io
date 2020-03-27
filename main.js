@@ -1,4 +1,9 @@
-var app = angular.module("main", ['ui.bootstrap', 'ngAnimate']);
+var app = angular.module("main", ['ui.bootstrap', 'ngAnimate', 'ngRoute']);
+app.config(function($routeProvider) {
+  $routeProvider.when("", {
+      templateUrl : "page/my-account.html"
+  })
+});
 app.directive("headerQuero", function() {
     return {
       templateUrl: "directives/header-quero.html"
