@@ -1,6 +1,6 @@
 var app = angular.module("main", ['ui.bootstrap', 'ngAnimate', 'ngRoute']);
 app.config(function($routeProvider) {
-  $routeProvider.when("", {
+  $routeProvider.when("/", {
       templateUrl : "page/my-account.html"
   })
 });
