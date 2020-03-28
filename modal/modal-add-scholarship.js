@@ -87,12 +87,6 @@ app.controller('ModalAddScholarship', function($scope, $modalInstance, items){
         $modalInstance.dismiss('cancel');
     }
 
-    $(document).bind("keydown keypress", function(e){
-        if( e.which == 8 ){ // 8 == backspace
-            $scope.cancel();
-        }
-    });
-
     checkSelection();
     getOptions();
     $scope.$watch('filters', $scope.filterResults, true);

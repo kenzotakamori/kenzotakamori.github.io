@@ -1,2 +1,3 @@
-# Practicing
-This repository is a place to store ideas and practice different stuffs.
+# Projeto Quero Educação
+Nome: Marcelo Kenzo Takamori
+Para executar o projeto, basta acesse a url: https://kenzotakamori.github.io/
