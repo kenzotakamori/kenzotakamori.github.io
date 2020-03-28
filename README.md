@@ -1,3 +1,5 @@
 # Projeto Quero Educação
 Nome: Marcelo Kenzo Takamori
-Para executar o projeto, basta acesse a url: https://kenzotakamori.github.io/
+
+## Descrição
+Desenvolvido no Github e disponível no Github pages, este projeto está destinado ao processo seletivo para a vaga de Frontend Developer na Quero Educação. Para executar o projeto, basta acesse [aqui](https://kenzotakamori.github.io/). 
